@@ -1,16 +1,17 @@
 @import 'reset/reset';
 @import url(./fonts/font.css);
 
-html{
+html {
   scroll-behavior: smooth;
   font-family: Montserrat;
 }
+
 .crop {
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-image: url(./img/header/corusant.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-image: url(./img/header/corusant.jpg);
 }
 
 .logo {
@@ -22,40 +23,820 @@ html{
   line-height: 24px;
   display: inline-block;
   align-items: flex-start;
-  color: #D4D4D4;
+  color: #d4d4d4;
   transition: 0.2s;
-}
-.logo:hover{
-  scale: 1.2;
-  cursor: pointer;
+
+  // використовуй нестінг, де це можливо - передивись і виправи це у всьому коді
+  &:hover {
+    scale: 1.2;
+    cursor: pointer;
+  }
 }
 
 .border {
-    display: inline;
-    position: absolute;
-    top: 46px;
-    right: 125px;
-    padding: 5px;
-    line-height: 20px;
-    margin: 10px auto;
-    justify-content: center;
-  
-    border: 2px solid #D4D4D4;
-    box-sizing: border-box;
-    border-radius: 40px;
-    .signUp {
-      text-decoration: none;
-      color: #D4D4D4;
-      font-size: 17px;
-      line-height: 17px;
-      transition: 0.2s;
-    }
+  display: inline;
+  position: absolute;
+  top: 46px;
+  right: 125px;
+  padding: 5px;
+  line-height: 20px;
+  margin: 10px auto;
+  justify-content: center;
+
+  border: 2px solid #d4d4d4;
+  box-sizing: border-box;
+  border-radius: 40px;
+
+  .signUp {
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 17px;
+    line-height: 17px;
+    transition: 0.2s;
+  }
 }
-.border:hover{
+// нестінг
+.border:hover {
   scale: 1.2;
 }
 
+// назви змінних і класів мають про щось казати під час прочитання самої назви,
+// тому треба оновити всюди назви на більш змістовні і універсальні
+// (якщо це червона кнопка, red-button буде погана назва, бо колір може помінятися)
 .log_in_b {
+  display: inline;
+  position: absolute;
+  top: 48px;
+  right: 215px;
+  padding: 5px;
+  line-height: 20px;
+  margin: 10px auto;
+  justify-content: center;
+
+  font-size: 17px;
+  line-height: 17px;
+  text-decoration: none;
+
+  color: #d4d4d4;
+  transition: 0.2s;
+}
+// nesting
+.log_in_b:hover {
+  scale: 1.2;
+}
+
+.tittle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 52px;
+
+  top: 170px;
+  line-height: 70px;
+  text-align: center;
+
+  color: #d4d4d4;
+}
+
+.smal_tittle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 230px;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+
+  color: #d4d4d4;
+}
+
+// naming
+.red_butt {
+  position: absolute;
+  left: 50%;
+  top: 500px;
+  transform: translate(-50%, -50%);
+
+  .txt {
+    position: absolute;
+    left: 23px;
+    top: 8px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #d4d4d4;
+    transition: 0.2s;
+    text-decoration: none;
+  }
+  // nesting
+  .txt:hover {
+    scale: 1.1;
+  }
+}
+
+// naming
+.butt_red {
+  position: relative;
+  text-align: center;
+  width: 225px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #d4d4d4;
+  border-radius: 40px;
+  cursor: pointer;
+  // transition варто вказати для конкретної властивості, якій ти хочеш його задати,
+  // бо якщо задати його для всіх властивостей це зайве перевантаження стилів
+  transition: 1.7s;
+}
+
+// nesting and naming
+.butt_red:hover {
+  box-shadow: 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee,
+    0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee;
+}
+
+// правила для загальних тегів або класів прийнято виносити на початок файлів і йти далі вниз орієнтуючись на порядок появлення класів у html файлі
+body {
+  background-color: #cccccc;
+}
+
+.section_two {
+  display: flex;
+  height: 650px;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  // naming
+  .h_one {
+    position: absolute;
+    width: 342px;
+    height: 32px;
+    top: 730px;
+
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+
+    margin-top: 20px;
+    color: #444444;
+  }
+  // naming
+  .img_sec_two {
+    width: 300px;
+    height: 400px;
+    transition: 0.2s;
+  }
+  // nesting
+  .img_sec_two:hover {
+    transform: scale(1.1);
+  }
+  // naming
+  .img_sec_tree {
+    width: 300px;
+    height: 400px;
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_tree:hover {
+    transform: scale(1.1);
+  }
+  // naming
+  .img_sec_four {
+    width: 300px;
+    height: 400px;
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_four:hover {
+    transform: scale(1.1);
+  }
+}
+
+.section_tree {
+  position: absolute;
+  width: 941px;
+  height: 361px;
+  left: calc(50% - 940px / 2);
+  top: 1351px;
+  // naming
+  .h_two {
+    position: absolute;
+    width: 491px;
+    height: 32px;
+    left: 226px;
+    top: -6px;
+
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #444444;
+  }
+  // naming
+  .img_sec_ {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center -50px;
+    border-radius: 50%;
+    left: 30px;
+    top: 61px;
+    // transition issue
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_:hover {
+    border-radius: 20%;
+  }
+  // naming - якщо нумерація цього елемента в htlm змінить назва стане неактуальною і
+  // доведеться міняти всюди це, це стосується всіх нумерацій у назвах
+  .name1 {
+    position: absolute;
+    left: 60px;
+    top: 220px;
+  }
+  // naming
+  .img_sec_five {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    left: 270px;
+    top: 61px;
+    // transition issue
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_five:hover {
+    border-radius: 20%;
+  }
+  // naming
+  .name2 {
+    position: absolute;
+    left: 300px;
+    top: 220px;
+  }
+  // naming
+  .img_sec_six {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    left: 510px;
+    top: 61px;
+    // transition issue
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_six:hover {
+    border-radius: 20%;
+  }
+  // naming
+  .name3 {
+    position: absolute;
+    left: 535px;
+    top: 220px;
+  }
+  // naming
+  .img_sec_seven {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    left: 750px;
+    top: 61px;
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_seven:hover {
+    border-radius: 20%;
+  }
+  // naming
+  .name4 {
+    position: absolute;
+    left: 775px;
+    top: 220px;
+  }
+  // naming - не скорочуй назви до нечитабельних (я чесно не розумію що тут написано)
+  .withe_but {
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    left: 380px;
+    top: 270px;
+
+    background-color: #b1b1b1;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    // намагайся відслідковувати щоб не було доруківок
+    .small_textt {
+      position: absolute;
+      width: 137px;
+      height: 17px;
+      left: 21px;
+      top: 9px;
+
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: #000000;
+      // transition issue
+      transition: 0.2s;
+    }
+    // nesting
+    .small_textt:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.section_for {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  height: 1031px;
+  margin-top: 430px;
+
+  .text_center {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    background-color: #666666b9;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #d1d1d1;
+  }
+
+  .sport {
+    // не залишай зайвий закоментований код
+    // position: absolute;
+    width: 297px;
+    height: 310px;
+    left: 0px;
+    top: 61px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/section_tree/newS3/three.jpg);
+
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    // transition issue
+    transition: 0.2s;
+  }
+  // nesting
+  .sport:hover {
+    scale: 1.1;
+  }
+
+  .health {
+    // не залишай зайвий закоментований код
+    // position: absolute;
+    width: 296px;
+    height: 310px;
+    left: 320px;
+    top: 61px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/section_tree/newS3/sea_star.jpg);
+
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  // nesting
+  .health:hover {
+    scale: 1.1;
+  }
+
+  .extreme {
+    width: 297px;
+    height: 310px;
+    justify-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/section_tree/newS3/three.jpg);
+
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  // nesting
+  .extreme:hover {
+    scale: 1.1;
+  }
+
+  .games {
+    // не залишай зайвий закоментований код
+    // position: absolute;
+    width: 300px;
+    height: 310px;
+    left: 0px;
+    top: 391px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/new_images/mike_2.jpg);
+
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  // nesting
+  .games:hover {
+    scale: 1.1;
+  }
+  // не зовсім розумію сенс назви, якщо в тебе все однакове і відрізняється тільки background-image -
+  // можна зробити один клас, який буде задавати загальні стилі і інші класи які будуть задавати тільки background-image
+  .culture_copy {
+    width: 620px;
+    height: 310px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
+
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  // nesting
+  .culture_copy:hover {
+    scale: 1.05;
+  }
+
+  .culture {
+    width: 620px;
+    height: 310px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/section_tree/newS3/mando.jpg);
+
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  // nesting
+  .culture:hover {
+    scale: 1.05;
+  }
+  // те саме стосовно назви і схожих параметрів
+  .games_copy {
+    width: 300px;
+    height: 310px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/section_tree/newS3/sec_3.jpg);
+
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  // nesting
+  .games_copy:hover {
+    scale: 1.1;
+  }
+  // naming
+  .h_tree {
+    position: absolute;
+    width: 413px;
+    height: 30px;
+    top: -80px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+
+    margin-top: 20px;
+    color: #444444;
+  }
+}
+
+.login {
+  position: absolute;
+  display: inline;
+  width: 482px;
+  height: 158px;
+  left: calc(50% - 482px / 2);
+  // якщо для позіціонування треба задавати настільки велике значення - щось тут пішло не так :)
+  top: 2932px;
+
+  // naming
+  .h_for {
+    position: absolute;
+    width: 358px;
+    height: 32px;
+    left: 60px;
+    top: -6px;
+
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+
+    color: #444444;
+  }
+  // для якого саме тексту тут описано правило?
+  .text {
+    position: absolute;
+    display: inline;
+    width: 275px;
+    height: 24px;
+    left: calc(50% - 275px / 2);
+    top: 55px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 14px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #666666;
+  }
+}
+
+.pace {
+  position: absolute;
+  width: 482px;
+  height: 40px;
+  left: 0px;
+  top: 118px;
+
+  // оскільки є тег з такою самою назвою, варто уточнити який саме або для чого цей інпут в назві класу
+  .input {
+    position: absolute;
+    width: 299px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+  }
+  // я так розумію тут малося на увазі button - краще не скорочувати назви до нечитабельних
+  .butt {
+    position: absolute;
+    width: 172.12px;
+    height: 40px;
+    left: 309px;
+    top: 0px;
+    background: #ffffff8a;
+    border-radius: 40px;
+    transition: 0.2s;
+  }
+  // nesting
+  .butt:hover {
+    scale: 1.07;
+  }
+  // клас називається decor, але в ньому ти відміняєш декорацію :)
+  .decor {
+    text-decoration: none;
+  }
+}
+
+// яке саме інфо?
+.info {
+  position: absolute;
+  width: 100%;
+  height: 225px;
+  justify-content: center;
+  top: 3200px;
+
+  // naming - колір може помінятися
+  .red_line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+  }
+  // naming
+  .red {
+    position: absolute;
+    width: 119px;
+    height: 20px;
+    left: 249px;
+    top: 38px;
+
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+    transform: 0.2s;
+  }
+  // nesting
+  .red:hover {
+    scale: 1.2;
+  }
+
+  .company {
+    position: absolute;
+    width: 70px;
+    height: 17px;
+    left: 490px;
+    top: 40px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #464646;
+  }
+
+  .partners {
+    position: absolute;
+    width: 64px;
+    height: 17px;
+    left: 729px;
+    top: 40px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #464646;
+  }
+
+  .contact {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 490px;
+    top: 68px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    transition: 0.2;
+
+    color: #000000;
+  }
+  // nesting
+  .contact:hover {
+    color: #000000;
+    scale: 1.1;
+  }
+  // about ?
+  .abou {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 490px;
+    top: 65px;
+    text-decoration: none;
+  }
+  // нечитабельна назва
+  .cont {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 490px;
+    top: 95px;
+    text-decoration: none;
+  }
+  // нечитабельна назва
+  .pres {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 490px;
+    top: 125px;
+    text-decoration: none;
+  }
+
+  .blog {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 490px;
+    top: 155px;
+    text-decoration: none;
+  }
+  // tap ?
+  .tap {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 490px;
+    top: 185px;
+    text-decoration: none;
+  }
+
+  .help {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 490px;
+    top: 215px;
+    text-decoration: none;
+  }
+  // design ?
+  .desig {
+    position: absolute;
+    width: 83px;
+    height: 12px;
+    left: calc(55% + 465px / 2);
+    top: 40px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1px;
+
+    color: #727272;
+  }
+  // logo ?
+  .logoo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: calc(55% + 495px / 2);
+    top: 65px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  // я так розумію це має бути якесь як обрізане фото? краще назвати для чого саме цей клас, а не що він робить
+  .crop {
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-image: url(./img/header/corusant.jpg);
+  }
+
+  .logo {
+    position: relative;
+    justify-content: start;
+    top: 58px;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    display: inline-block;
+    align-items: flex-start;
+    color: #d4d4d4;
+  }
+  // naming
+  .log_in_b {
     display: inline;
     position: absolute;
     top: 48px;
@@ -65,34 +846,56 @@ html{
     margin: 10px auto;
     justify-content: center;
 
+    font-family: Montserrat;
     font-size: 17px;
     line-height: 17px;
     text-decoration: none;
 
-    color: #D4D4D4;
-    transition: 0.2s;
-}
-.log_in_b:hover{
-  scale: 1.2;
-}
+    color: #d4d4d4;
+  }
+  // який саме бордер (або для чого)?
+  .border {
+    display: inline;
+    position: absolute;
+    top: 46px;
+    right: 125px;
+    padding: 5px;
+    line-height: 20px;
+    margin: 10px auto;
+    justify-content: center;
 
-.tittle {
+    border: 2px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+    .signUp {
+      text-decoration: none;
+      color: #d4d4d4;
+      font-family: Montserrat;
+      font-size: 17px;
+      line-height: 17px;
+    }
+  }
+  // який саме title або для чого?
+  .tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: bold;
     font-size: 52px;
-  
+
     top: 170px;
     line-height: 70px;
     text-align: center;
 
-    color: #D4D4D4;
- }
+    color: #d4d4d4;
+  }
 
-.smal_tittle {
+  .small_tittle {
     position: relative;
     display: flex;
     justify-content: center;
@@ -100,775 +903,29 @@ html{
     top: 230px;
 
     font-family: Roboto;
+    font-style: normal;
     font-size: 24px;
-    font-weight:bold;
+    font-weight: bold;
     line-height: 24px;
     text-align: center;
 
-    color: #D4D4D4;
-}
-
-.red_butt {
+    color: #d4d4d4;
+  }
+  // naming
+  .red_butt {
     position: absolute;
+    width: 225px;
+    height: 40px;
     left: 50%;
     top: 500px;
     transform: translate(-50%, -50%);
 
+    background: #e9e1e1;
+    border-radius: 40px;
+    // transition issue
+    transition: 0.2s;
+    // naming
     .txt {
-        position: absolute;
-        left: 23px;
-        top: 8px;
-
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-        color: #D4D4D4;
-        transition: 0.2s;
-        text-decoration: none;
-    }
-    .txt:hover{  
-      scale: 1.1;
-    }
-}
-
-.butt_red{
-  position: relative;
-  text-align: center;
-  width: 225px;
-  height: 40px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 3px solid #D4D4D4;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: 1.7s;
-}
-
-.butt_red:hover{
-  box-shadow: 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee,
-  0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee;
-}
-
-body{
-  background-color: #CCCCCC;
-}
-
-.section_two {
-    display: flex;
-    height: 650px;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-
-    .h_one {
-        position: absolute;
-        width: 342px;
-        height: 32px;
-        top:730px;
-
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 32px;
-
-        margin-top: 20px;
-        color: #444444;
-    }
-
-    .img_sec_two {
-        width: 300px;
-        height: 400px;
-        transition: 0.2s;
-    }
-    .img_sec_two:hover {
-      transform: scale(1.1);
-    }
-
-    .img_sec_tree {
-        width: 300px;
-        height: 400px;
-        transition: 0.2s;
-    }
-    .img_sec_tree:hover {
-      transform: scale(1.1);
-    }
-
-    .img_sec_four {
-        width: 300px;
-        height: 400px;
-        transition: 0.2s;
-    }
-    .img_sec_four:hover{
-      transform: scale(1.1);
-    }
-}
-.section_tree {
-    position: absolute;
-    width: 941px;
-    height: 361px;
-    left: calc(50% - 940px/2);
-    top: 1351px;
-
-    .h_two {
-        position: absolute;
-        width: 491px;
-        height: 32px;
-        left: 226px;
-        top: -6px;
-
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 32px;
-
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-
-        color: #444444;
-    }
-
-    .img_sec_ {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        object-position: center -50px;
-        border-radius: 50%;
-        left: 30px;
-        top: 61px; 
-        transition: 0.2s;
-    }
-    .img_sec_:hover{
-      border-radius: 20%;
-    }
-    .name1{
-        position: absolute;
-        left: 60px;
-        top: 220px;
-    }
-
-    .img_sec_five {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-        object-position: center ;
-        border-radius: 50%;
-        left: 270px;
-        top: 61px;
-        transition: 0.2s;
-    }
-    .img_sec_five:hover{
-      border-radius: 20%;
-    }
-    .name2{
-      position: absolute;
-      left: 300px;
-      top: 220px;
-  }
-
-    .img_sec_six {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 50%;
-        left: 510px;
-        top: 61px;
-        transition: 0.2s;
-    }
-    .img_sec_six:hover{
-      border-radius: 20%;
-    }
-    .name3{
-      position: absolute;
-      left: 535px;
-      top: 220px;
-  }
-
-    .img_sec_seven {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 50%;
-        left: 750px;
-        top: 61px;
-        transition: 0.2S;
-    }
-    .img_sec_seven:hover{
-      border-radius: 20%;
-    }
-    .name4{
-      position: absolute;
-      left: 775px;
-      top: 220px;
-  }
-
-    .withe_but {
-        position: absolute;
-        width: 180px;
-        height: 40px;
-        left: 380px;
-        top: 270px;
-
-        background-color: #b1b1b1;
-        border: 2px solid #000000;
-        box-sizing: border-box;
-        border-radius: 40px;
-
-        .small_textt {
-            position: absolute;
-            width: 137px;
-            height: 17px;
-            left: 21px;
-            top: 9px;
-
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-
-            color: #000000;
-            transition: 0.2s;
-        }
-        .small_textt:hover{
-          transform: scale(1.1);
-        }
-    }
-}
-
-.section_for {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    position: relative;
-    flex-wrap: wrap;
-    height: 1031px;
-    margin-top: 430px;
-    
-    .text_centr {
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 27px;
-      background-color: #666666b9;
-
-      display: flex;
-      align-items:center;
-      text-align: center;
-      justify-content: center;
-
-      color: #d1d1d1;
-  }
-
-    .sport {
-        // position: absolute;
-        width: 297px;
-        height: 310px;
-        left: 0px;
-        top: 61px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./img/section_tree/newS3/three.jpg);
-
-        mix-blend-mode: normal;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    .sport:hover{  
-      scale: 1.1;
-    }
-
-    .health {
-        // position: absolute;
-        width: 296px;
-        height: 310px;
-        left: 320px;
-        top: 61px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./img/section_tree/newS3/sea_star.jpg);
-
-        mix-blend-mode: normal;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    .health:hover{  
-      scale: 1.1;
-    }
-
-    .extreme {
-        width: 297px;
-        height: 310px;
-        justify-content: flex-start;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./img/section_tree/newS3/three.jpg);
-
-        mix-blend-mode: normal;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    .extreme:hover{  
-      scale: 1.1;
-    }
-
-    .games {
-        // position: absolute;
-        width: 300px;
-        height: 310px;
-        left: 0px;
-        top: 391px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./img/new_images/mike_2.jpg);
-
-        mix-blend-mode: normal;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    .games:hover{  
-      scale: 1.1;
-    }
-    .culture_copy {
-        width: 620px;
-        height: 310px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
-
-        mix-blend-mode: normal;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    .culture_copy:hover{  
-      scale: 1.050;
-    }
-
-    .culture {
-        width: 620px;
-        height: 310px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./img/section_tree/newS3/mando.jpg);
-
-        mix-blend-mode: normal;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    .culture:hover{  
-      scale: 1.050;
-    }
-
-    .games_copy {
-        width: 300px;
-        height: 310px;
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./img/section_tree/newS3/sec_3.jpg);
-
-        mix-blend-mode: normal;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-    .games_copy:hover{  
-      scale: 1.1;
-    }
-
-    .h_tree {
-        position: absolute;
-        width: 413px;
-        height: 30px;
-        top: -80px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 32px;
-
-        margin-top: 20px;
-        color: #444444;
-    }
-}
-
-.login {
-    position: absolute;
-    display: inline;
-    width: 482px;
-    height: 158px;
-    left: calc(50% - 482px/2);
-    top: 2932px;
-
-    .h_for {
-        position: absolute;
-        width: 358px;
-        height: 32px;
-        left: 60px;
-        top: -6px;
-
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 32px;
-
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-        justify-content: center;
-
-        color: #444444;
-    }
-
-    .text {
-        position: absolute;
-        display: inline;
-        width: 275px;
-        height: 24px;
-        left: calc(50% - 275px/2);
-        top: 55px;
-
-        font-family: Roboto;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 14px;
-
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-
-        color: #666666;
-    }
-}
-
-.pace {
-    position: absolute;
-    width: 482px;
-    height: 40px;
-    left: 0px;
-    top: 118px;
-
-    .input {
-        position: absolute;
-        width: 299px;
-        height: 40px;
-        left: 0px;
-        top: 0px;
-
-        background: #FFFFFF;
-        border: 1px solid #D4D4D4;
-        box-sizing: border-box;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
-        border-radius: 3px;
-    }
-    .butt {
-        position: absolute;
-        width: 172.12px;
-        height: 40px;
-        left: 309px;
-        top: 0px;
-        background: #ffffff8a;
-        border-radius: 40px;
-        transition: 0.2s;
-        
-    }
-    .butt:hover{
-      scale: 1.07;
-    }
-    .decor{text-decoration: none;}
-}
-
-.info {
-    position: absolute;
-    width: 100%;
-    height: 225px;
-    justify-content: center;
-    top: 3200px;
-
-    .red_line {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0px;
-        top: 0px;
-
-        background: #000000;
-    }
-
-    .red {
-        position: absolute;
-        width: 119px;
-        height: 20px;
-        left: 249px;
-        top: 38px;
-
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 20px;
-
-        color: #000000;
-        transform: 0.2s;
-    }
-    .red:hover{
-      scale: 1.2;
-    }
-
-    .company {
-        position: absolute;
-        width: 70px;
-        height: 17px;
-        left: 490px;
-        top: 40px;
-
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-
-        display: flex;
-        align-items: flex-end;
-
-        color: #464646;
-    }
-
-    .partners {
-        position: absolute;
-        width: 64px;
-        height: 17px;
-        left: 729px;
-        top: 40px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-
-        display: flex;
-        align-items: flex-end;
-
-        color: #464646;
-    }
-
-    .contact {
-        position: absolute;
-        width: 114px;
-        height: 26px;
-        left: 490px;
-        top: 68px;
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 26px;
-        transition: 0.2;
-
-        color: #000000;
-    }
-    .contact:hover{
-      color: #000000;
-      scale: 1.1;
-    }
-
-    .abou {
-        position: absolute;
-        width: 114px;
-        height: 26px;
-        left: 490px;
-        top: 65px;
-        text-decoration: none;
-    }
-
-    .cont {
-        position: absolute;
-        width: 114px;
-        height: 26px;
-        left: 490px;
-        top: 95px;
-        text-decoration: none;
-    }
-
-    .pres {
-        position: absolute;
-        width: 114px;
-        height: 26px;
-        left: 490px;
-        top: 125px;
-        text-decoration: none;
-    }
-
-    .blog {
-
-        position: absolute;
-        width: 114px;
-        height: 26px;
-        left: 490px;
-        top: 155px;
-        text-decoration: none;
-    }
-
-    .tap {
-
-        position: absolute;
-        width: 114px;
-        height: 26px;
-        left: 490px;
-        top: 185px;
-        text-decoration: none;
-    }
-
-    .help {
-        position: absolute;
-        width: 114px;
-        height: 26px;
-        left: 490px;
-        top: 215px;
-        text-decoration: none;
-    }
-
-    .desig {
-        position: absolute;
-        width: 83px;
-        height: 12px;
-        left: calc(55% + 465px/2);
-        top: 40px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 10px;
-        line-height: 12px;
-        display: flex;
-        align-items: flex-end;
-        letter-spacing: 1px;
-
-        color: #727272;
-    }
-
-    .logoo {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        left: calc(55% + 495px/2);
-        top: 65px;
-    }
-}
-
-@media screen and (max-width: 1160px) {
-
-  .crop {
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-image: url(./img/header/corusant.jpg);
-}
-
-    .logo {
-      position: relative;
-      justify-content: start;
-      top: 58px;
-      margin-left: 20px;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 24px;
-      display: inline-block;
-      align-items: flex-start;
-      color: #D4D4D4;
-    }
-
-    .log_in_b {
-                
-      display: inline;
-      position: absolute;
-      top: 48px;
-      right: 215px;
-      padding: 5px;
-      line-height: 20px;
-      margin: 10px auto;
-      justify-content: center;
-  
-      font-family: Montserrat;
-      font-size: 17px;
-      line-height: 17px;
-      text-decoration: none;
-  
-      color: #D4D4D4;
-  }
-    .border {
-      display: inline;
-      position: absolute;
-      top: 46px;
-      right: 125px;
-      padding: 5px;
-      line-height: 20px;
-      margin: 10px auto;
-      justify-content: center;
-    
-      border: 2px solid #D4D4D4;
-      box-sizing: border-box;
-      border-radius: 40px;
-      .signUp {
-        text-decoration: none;
-        color: #D4D4D4;
-        font-family: Montserrat;
-        font-size: 17px;
-        line-height: 17px;
-      }
-  }
-
-  .tittle {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
-  
-    top: 170px;
-    line-height: 70px;
-    text-align: center;
-
-    color: #D4D4D4;
- }
-
- .smal_tittle {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 230px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 24px;
-  font-weight:bold;
-  line-height: 24px;
-  text-align: center;
-
-  color: #D4D4D4;
-}
-
-.red_butt {
-  position: absolute;
-  width: 225px;
-  height: 40px;
-  left: 50%;
-  top: 500px;
-  transform: translate(-50%, -50%);
-
-  background: #e9e1e1;
-  border-radius: 40px;
-  transition: 0.2s;
-
-  .txt {
       position: absolute;
       left: 23px;
       top: 10px;
@@ -881,710 +938,859 @@ body{
       color: #000000;
       transition: 0.2s;
       text-decoration: none;
+    }
+    // nesting
+    .txt:hover {
+      scale: 1.1;
+    }
   }
-  .txt:hover{  
-    scale: 1.1;
-  }
-}
 
-
-    .section_two {
-        display: flex;
-        height: 630px;
-        justify-content: center;
-        gap: 50px;
-        align-items: center;
-
-        .h_one {
-            position: absolute;
-            width: 289px;
-            height: 27px;
-            top: 730px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-            /* identical to box height */
-
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-
-            color: #444444;
-        }
-
-        .img_sec_two {
-            width: 200px;
-            height: 400px;
-            object-fit: cover;
-            transition: 0.2s;
-        }
-        .img_sec_two:hover {
-          transform: scale(1.1);
-        }
-
-        .img_sec_tree {
-            width: 200px;
-            height: 400px;
-            object-fit: cover;
-            transition: 0.2s;
-        }
-        .img_sec_tree:hover {
-          transform: scale(1.1);
-        }
-
-        .img_sec_four {
-            width: 200px;
-            height: 400px;
-            object-fit: cover;
-            transition: 0.2s;  
-        }
-        .img_sec_four:hover{
-          transform: scale(1.1);
-        }
-    }
-
-    .section_tree {
-        position: absolute;
-        width: 492px;
-        height: 905px;
-        left: calc(50% - 492px/2);
-        top: 1351px;
-
-        .h_two {
-            position: absolute;
-            width: 416px;
-            height: 27px;
-            left: 38px;
-            top: -20px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-
-            color: #444444;
-        }
-
-        .img_sec_ {
-            position: absolute;
-            width: 236px;
-            height: 236px;
-            left: 0px;
-            top: 61px;
-            object-fit: cover;
-            object-position: center;
-        }
-        .name1{
-          position: absolute;
-          left: 70px;
-          top: 30px;
-          font-family: Montserrat;
-          color: #000000;
-      }
-
-        .img_sec_five {
-            position: absolute;
-            width: 236px;
-            height: 236px;
-            left: 256px;
-            top: 61px;
-            object-fit: cover;
-        }
-        .name2{
-          position: absolute;
-          left: 330px;
-          top: 30px;
-          font-family: Montserrat;
-      }
-
-        .img_sec_six {
-            position: absolute;
-            width: 236px;
-            height: 236px;
-            left: 0px;
-            top: 350px;
-        }
-        .name3{
-          position: absolute;
-          left: 60px;
-          top: 320px;
-          font-family: Montserrat;
-      }
-
-        .img_sec_seven {
-            position: absolute;
-            width: 236px;
-            height: 236px;
-            left: 256px;
-            top: 350px;
-        }
-        .name4{
-          position: absolute;
-          left: 320px;
-          top: 320px;
-          font-family: Montserrat;
-      }
-
-        .withe_but {
-            position: absolute;
-            width: 180px;
-            height: 40px;
-            left: 156px;
-            top: 605px;
-
-            background: #b1b1b1;
-            border: 2px solid #000000;
-            box-sizing: border-box;
-            border-radius: 40px;
-
-            .small_textt {
-                position: absolute;
-                width: 137px;
-                height: 17px;
-                left: 21px;
-                top: 9px;
-
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 17px;
-
-                display: flex;
-                align-items: flex-end;
-
-                color: #000000;
-            }
-        }
-    }
-
-
-    .section_for {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      align-items: center;
-      position: relative;
-      flex-wrap: wrap;
-      height: 700px;
-      margin-top: 800px;
-      
-      
-
-        .text_centr {
-          font-family: Montserrat;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 22px;
-          line-height: 27px;
-          background-color: #666666b9;
-    
-          display: flex;
-          align-items: flex-end;
-          text-align: center;
-          justify-content: center;
-    
-          color: #d1d1d1;
-      }
-
-        .h_tree {
-            position: absolute;
-            width: 350px;
-            height: 27px;
-            justify-content: center;
-            top: -90px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-
-            color: #444444;
-        }
-
-        .sport {
-            width: 210px;
-            height: 310px;
-            left: 0px;
-            top: 61px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/three.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .health {
-            // position: absolute;
-            width: 210px;
-            height: 310px;
-            left: 320px;
-            top: 61px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/sea_star.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .extreme {
-            width: 210px;
-            height: 310px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/three.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .games {
-            width: 210px;
-            height: 310px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/new_images/mike_2.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-
-        }
-        .culture_copy {
-            // position: absolute;
-            width: 436px;
-            height: 310px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
-            object-fit: cover;
-            object-position: 0px;
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .culture {
-            // position: absolute;
-            width: 436px;
-            height: 310px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/mando.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .games_copy {
-            // position: absolute;
-            width: 210px;
-            height: 310px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/sec_3.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-    }
-
-    .login {
-
-        position: absolute;
-        display: inline;
-        width: 482px;
-        height: 158px;
-        left: calc(50% - 482px/2);
-        top: 3155px;
-
-        .h_for {
-            position: absolute;
-            width: 358px;
-            height: 32px;
-            left: 62.5px;
-            top: -6px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 26px;
-            line-height: 32px;
-
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-
-            color: #444444;
-        }
-
-        .text {
-            position: absolute;
-            width: 415px;
-            height: 24px;
-            left: 90px;
-            top: 69px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 14px;
-            /* or 78% */
-
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-
-            color: #666666;
-        }
-    }
-
-    .pace {
-        position: absolute;
-        width: 482px;
-        height: 40px;
-        left: 0px;
-        top: 118px;
-
-        .input {
-            position: absolute;
-            width: 299px;
-            height: 40px;
-            left: 0px;
-            top: 0px;
-
-            background: #FFFFFF;
-            border: 1px solid #D4D4D4;
-            box-sizing: border-box;
-            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
-            border-radius: 3px;
-        }
-
-        .butt {
-            position: absolute;
-            width: 172.12px;
-            height: 40px;
-            left: 309px;
-            top: 0px;
-            background: #ffffff8a;
-            border-radius: 40px;
-        }
-        .butt:hover{
-          scale: 1.07;
-        }
-    }
-
-
-    .info {
-        display: flex;
-        width: 720px;
-        height: 224px;
-        left: calc(50% - 720px/2);
-        top: 3335px;
-
-        .red_line {
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            left: 0px;
-            top: 0px;
-
-            background: #000000;
-        }
-
-        .red {
-            position: absolute;
-            width: 119px;
-            height: 20px;
-            left: 39px;
-            top: 38px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 20px;
-
-            display: flex;
-            align-items: flex-end;
-
-            color: #000000
-        }
-
-        .company {
-            position: absolute;
-            width: 70px;
-            height: 17px;
-            left: 266px;
-            top: 40px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-
-            color: #444444;
-        }
-
-        .partners {
-            position: absolute;
-            width: 64px;
-            height: 17px;
-            left: 436px;
-            top: 40px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-
-            display: flex;
-            align-items: flex-end;
-
-            color: #444444;
-        }
-
-        .contact {
-            position: absolute;
-            width: 114px;
-            height: 156px;
-            left: 266px;
-            top: 68px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 26px;
-            color: #999999;
-        }
-
-        .abou {
-            position: absolute;
-            width: 114px;
-            height: 26px;
-            left: 266px;
-            top: 65px;
-            text-decoration: none;
-        }
-
-        .cont {
-            position: absolute;
-            width: 114px;
-            height: 26px;
-            left: 266px;
-            top: 95px;
-            text-decoration: none;
-        }
-
-        .pres {
-            position: absolute;
-            width: 114px;
-            height: 26px;
-            left: 266px;
-            top: 125px;
-            text-decoration: none;
-        }
-
-        .blog {
-
-            position: absolute;
-            width: 114px;
-            height: 26px;
-            left: 266px;
-            top: 155px;
-            text-decoration: none;
-        }
-
-        .tap {
-
-            position: absolute;
-            width: 114px;
-            height: 26px;
-            left: 266px;
-            top: 185px;
-            text-decoration: none;
-        }
-
-        .help {
-            position: absolute;
-            width: 114px;
-            height: 26px;
-            left: 266px;
-            top: 215px;
-            text-decoration: none;
-        }
-
-        .desig {
-            position: absolute;
-            width: 83px;
-            height: 12px;
-            left: 585px;
-            top: 40px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 10px;
-            line-height: 12px;
-            letter-spacing: 1px;
-
-            color: black;
-        }
-
-        .logoo {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            left: 620px;
-            top: 59px;
-        }
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .crop {
-        background-size: cover;
-        background-position: center;
-
-        height: 540px;
-        background-repeat: no-repeat;
-        background-image: url(./img/header/corusant.jpg);
-    }
-
-    .logo {
-        position: relative;
-        left: 5px;
-        top: 60px;
-
-
-        font-family: Montserrat;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
-        display: inline-block;
-        align-items: flex-start;
-
-        color: #FFFFFF;
-    }
-
-    .log_in_b {
-      display: inline;
+  .section_two {
+    display: flex;
+    height: 630px;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    // naming
+    .h_one {
       position: absolute;
-      top: 50px;
-      right: 115px;
-      padding: 5px;
-      line-height: 20px;
-      margin: 10px auto;
-      justify-content: center;
-  
-      font-family: Montserrat;
-      font-size: 17px;
-      line-height: 17px;
-      /* identical to box height */
-      text-decoration: none;
-  
-      color: #D4D4D4;
-    }
+      width: 289px;
+      height: 27px;
+      top: 730px;
 
-    .border {
-      display: inline;
-      position: absolute;
-      top: 46px;
-      right: 35px;
-      padding: 5px;
-      line-height: 20px;
-      margin: 10px auto;
-      justify-content: center;
-    
-      border: 2px solid #D4D4D4;
-      box-sizing: border-box;
-      border-radius: 40px;
-      .signUp {
-        text-decoration: none;
-        color: #D4D4D4;
-        font-family: Montserrat;
-        font-size: 17px;
-        line-height: 17px;
-      }
-  }
-
-    .tittle {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-  
       font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
-      font-size: 42px;
-    
-      top: 130px;
-      line-height: 70px;
-      text-align: center;
-  
-      color: #D4D4D4;
-    }
+      font-size: 22px;
+      line-height: 27px;
+      // unused comments
+      /* identical to box height */
 
-    .smal_tittle {
-      position: relative;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      top: 200px;
-  
-      font-family: Roboto;
-      background-color: #1f1f1f;
-      font-style: normal;
-      font-size: 24px;
-      font-weight:bold;
-      line-height: 24px;
+      align-items: flex-end;
       text-align: center;
-  
-      color: #D4D4D4;
+
+      color: #444444;
+    }
+    // naming
+    .img_sec_two {
+      width: 200px;
+      height: 400px;
+      object-fit: cover;
+      // transition issue
+      transition: 0.2s;
+    }
+    // nesting
+    .img_sec_two:hover {
+      transform: scale(1.1);
+    }
+    // naming
+    .img_sec_tree {
+      width: 200px;
+      height: 400px;
+      object-fit: cover;
+      transition: 0.2s;
+    }
+    .img_sec_tree:hover {
+      transform: scale(1.1);
+    }
+    // naming
+    .img_sec_four {
+      width: 200px;
+      height: 400px;
+      object-fit: cover;
+      transition: 0.2s;
+    }
+    .img_sec_four:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .section_tree {
+    position: absolute;
+    width: 492px;
+    height: 905px;
+    left: calc(50% - 492px / 2);
+    // те саме про розмір позіціонування
+    top: 1351px;
+    // naming
+    .h_two {
+      position: absolute;
+      width: 416px;
+      height: 27px;
+      left: 38px;
+      top: -20px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #444444;
     }
 
-    .red_butt {
-
+    .img_sec_ {
       position: absolute;
-      width: 225px;
-      height: 40px;
-      left: 50%;
-      top: 450px;
-      transform: translate(-50%, -50%);
-  
-      background: #e9e1e1;
-      border-radius: 40px;
-      transition: 0.2s;
+      width: 236px;
+      height: 236px;
+      left: 0px;
+      top: 61px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .name1 {
+      position: absolute;
+      left: 70px;
+      top: 30px;
+      font-family: Montserrat;
+      color: #000000;
+    }
 
-      .txt {
+    .img_sec_five {
+      position: absolute;
+      width: 236px;
+      height: 236px;
+      left: 256px;
+      top: 61px;
+      object-fit: cover;
+    }
+    .name2 {
+      position: absolute;
+      left: 330px;
+      top: 30px;
+      font-family: Montserrat;
+    }
+
+    .img_sec_six {
+      position: absolute;
+      width: 236px;
+      height: 236px;
+      left: 0px;
+      top: 350px;
+    }
+    .name3 {
+      position: absolute;
+      left: 60px;
+      top: 320px;
+      font-family: Montserrat;
+    }
+
+    .img_sec_seven {
+      position: absolute;
+      width: 236px;
+      height: 236px;
+      left: 256px;
+      top: 350px;
+    }
+    .name4 {
+      position: absolute;
+      left: 320px;
+      top: 320px;
+      font-family: Montserrat;
+    }
+
+    .withe_but {
+      position: absolute;
+      width: 180px;
+      height: 40px;
+      left: 156px;
+      top: 605px;
+
+      background: #b1b1b1;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      border-radius: 40px;
+
+      .small_textt {
         position: absolute;
-        left: 23px;
+        width: 137px;
+        height: 17px;
+        left: 21px;
+        top: 9px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+
+        display: flex;
+        align-items: flex-end;
+
+        color: #000000;
+      }
+    }
+  }
+
+  .section_for {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    height: 700px;
+    margin-top: 800px;
+
+    .text_centr {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      background-color: #666666b9;
+
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+      justify-content: center;
+
+      color: #d1d1d1;
+    }
+
+    .h_tree {
+      position: absolute;
+      width: 350px;
+      height: 27px;
+      justify-content: center;
+      top: -90px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #444444;
+    }
+
+    .sport {
+      width: 210px;
+      height: 310px;
+      left: 0px;
+      top: 61px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/three.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+
+    .health {
+      // position: absolute;
+      width: 210px;
+      height: 310px;
+      left: 320px;
+      top: 61px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/sea_star.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+
+    .extreme {
+      width: 210px;
+      height: 310px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/three.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+
+    .games {
+      width: 210px;
+      height: 310px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/new_images/mike_2.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+    .culture_copy {
+      // position: absolute;
+      width: 436px;
+      height: 310px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
+      object-fit: cover;
+      object-position: 0px;
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+
+    .culture {
+      // position: absolute;
+      width: 436px;
+      height: 310px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/mando.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+
+    .games_copy {
+      // position: absolute;
+      width: 210px;
+      height: 310px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/sec_3.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+  }
+
+  .login {
+    position: absolute;
+    display: inline;
+    width: 482px;
+    height: 158px;
+    left: calc(50% - 482px / 2);
+    top: 3155px;
+
+    .h_for {
+      position: absolute;
+      width: 358px;
+      height: 32px;
+      left: 62.5px;
+      top: -6px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;
+
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #444444;
+    }
+
+    .text {
+      position: absolute;
+      width: 415px;
+      height: 24px;
+      left: 90px;
+      top: 69px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 14px;
+      /* or 78% */
+
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #666666;
+    }
+  }
+
+  .pace {
+    position: absolute;
+    width: 482px;
+    height: 40px;
+    left: 0px;
+    top: 118px;
+
+    .input {
+      position: absolute;
+      width: 299px;
+      height: 40px;
+      left: 0px;
+      top: 0px;
+
+      background: #ffffff;
+      border: 1px solid #d4d4d4;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+      border-radius: 3px;
+    }
+
+    .butt {
+      position: absolute;
+      width: 172.12px;
+      height: 40px;
+      left: 309px;
+      top: 0px;
+      background: #ffffff8a;
+      border-radius: 40px;
+    }
+    .butt:hover {
+      scale: 1.07;
+    }
+  }
+
+  .info {
+    display: flex;
+    width: 720px;
+    height: 224px;
+    left: calc(50% - 720px / 2);
+    top: 3335px;
+
+    .red_line {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0px;
+      top: 0px;
+
+      background: #000000;
+    }
+
+    .red {
+      position: absolute;
+      width: 119px;
+      height: 20px;
+      left: 39px;
+      top: 38px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+
+      display: flex;
+      align-items: flex-end;
+
+      color: #000000;
+    }
+
+    .company {
+      position: absolute;
+      width: 70px;
+      height: 17px;
+      left: 266px;
+      top: 40px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: #444444;
+    }
+
+    .partners {
+      position: absolute;
+      width: 64px;
+      height: 17px;
+      left: 436px;
+      top: 40px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+
+      display: flex;
+      align-items: flex-end;
+
+      color: #444444;
+    }
+
+    .contact {
+      position: absolute;
+      width: 114px;
+      height: 156px;
+      left: 266px;
+      top: 68px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 26px;
+      color: #999999;
+    }
+
+    .abou {
+      position: absolute;
+      width: 114px;
+      height: 26px;
+      left: 266px;
+      top: 65px;
+      text-decoration: none;
+    }
+
+    .cont {
+      position: absolute;
+      width: 114px;
+      height: 26px;
+      left: 266px;
+      top: 95px;
+      text-decoration: none;
+    }
+
+    .pres {
+      position: absolute;
+      width: 114px;
+      height: 26px;
+      left: 266px;
+      top: 125px;
+      text-decoration: none;
+    }
+
+    .blog {
+      position: absolute;
+      width: 114px;
+      height: 26px;
+      left: 266px;
+      top: 155px;
+      text-decoration: none;
+    }
+
+    .tap {
+      position: absolute;
+      width: 114px;
+      height: 26px;
+      left: 266px;
+      top: 185px;
+      text-decoration: none;
+    }
+
+    .help {
+      position: absolute;
+      width: 114px;
+      height: 26px;
+      left: 266px;
+      top: 215px;
+      text-decoration: none;
+    }
+
+    .desig {
+      position: absolute;
+      width: 83px;
+      height: 12px;
+      left: 585px;
+      top: 40px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 1px;
+
+      color: black;
+    }
+
+    .logoo {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 620px;
+      top: 59px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .crop {
+    background-size: cover;
+    background-position: center;
+
+    height: 540px;
+    background-repeat: no-repeat;
+    background-image: url(./img/header/corusant.jpg);
+  }
+
+  .logo {
+    position: relative;
+    left: 5px;
+    top: 60px;
+
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    align-items: flex-start;
+
+    color: #ffffff;
+  }
+
+  .log_in_b {
+    display: inline;
+    position: absolute;
+    top: 50px;
+    right: 115px;
+    padding: 5px;
+    line-height: 20px;
+    margin: 10px auto;
+    justify-content: center;
+
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 17px;
+    /* identical to box height */
+    text-decoration: none;
+
+    color: #d4d4d4;
+  }
+
+  .border {
+    display: inline;
+    position: absolute;
+    top: 46px;
+    right: 35px;
+    padding: 5px;
+    line-height: 20px;
+    margin: 10px auto;
+    justify-content: center;
+
+    border: 2px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 40px;
+    .signUp {
+      text-decoration: none;
+      color: #d4d4d4;
+      font-family: Montserrat;
+      font-size: 17px;
+      line-height: 17px;
+    }
+  }
+
+  .tittle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+
+    top: 130px;
+    line-height: 70px;
+    text-align: center;
+
+    color: #d4d4d4;
+  }
+
+  .smal_tittle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+
+    font-family: Roboto;
+    background-color: #1f1f1f;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+
+    color: #d4d4d4;
+  }
+
+  .red_butt {
+    position: absolute;
+    width: 225px;
+    height: 40px;
+    left: 50%;
+    top: 450px;
+    transform: translate(-50%, -50%);
+
+    background: #e9e1e1;
+    border-radius: 40px;
+    transition: 0.2s;
+
+    .txt {
+      position: absolute;
+      left: 23px;
+      top: 10px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      transition: 0.2s;
+      text-decoration: none;
+    }
+    .txt:hover {
+      scale: 1.1;
+    }
+  }
+
+  .section_two {
+    display: flex;
+    height: 650px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 781px;
+    flex-direction: column;
+
+    .h_one {
+      // position: absolute;
+      width: 289px;
+      height: 27px;
+      top: 550px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+
+      display: flex;
+      color: #444444;
+    }
+
+    .img_sec_two {
+      // position: absolute;
+      margin-top: 110px;
+      width: 200px;
+      height: 220px;
+    }
+
+    .img_sec_tree {
+      // position: absolute;
+      width: 200px;
+      height: 220px;
+      left: 0px;
+      top: 291px;
+    }
+
+    .img_sec_four {
+      // position: absolute;
+      width: 200px;
+      height: 220px;
+      left: 0px;
+      top: 541px;
+    }
+  }
+
+  .section_tree {
+    position: absolute;
+    width: 300px;
+    height: 900px;
+    left: calc(50% - 300px / 2);
+    top: 1392px;
+
+    .h_two {
+      position: absolute;
+      width: 280px;
+      height: 54px;
+      left: 10px;
+      top: 0px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #444444;
+    }
+
+    .img_sec_ {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 68px;
+    }
+    .name1 {
+      left: 105px;
+      top: 220px;
+    }
+
+    .img_sec_five {
+      // position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 269px;
+    }
+    .name2 {
+      left: 105px;
+      top: 420px;
+    }
+
+    .img_sec_six {
+      // position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 469px;
+    }
+    .name3 {
+      left: 95px;
+      top: 620px;
+    }
+
+    .img_sec_seven {
+      // position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 660px;
+    }
+    .name4 {
+      left: 95px;
+      top: 813px;
+    }
+
+    .withe_but {
+      // position: absolute;
+      width: 280px;
+      height: 40px;
+      left: 10px;
+      top: 850px;
+
+      background-color: #b1b1b1;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      border-radius: 40px;
+
+      .small_textt {
+        // position: absolute;
+        width: 137px;
+        height: 17px;
+        left: 70px;
         top: 10px;
 
         font-family: Montserrat;
@@ -1592,542 +1798,382 @@ body{
         font-weight: bold;
         font-size: 14px;
         line-height: 17px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: flex-end;
+
         color: #000000;
-        transition: 0.2s;
-        text-decoration: none;
+      }
     }
-    .txt:hover{  
-      scale: 1.1;
-    }
+  }
+
+  .section_for {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    // width: 300px;
+    height: 1280px;
+    margin-top: 950px;
+
+    .h_tree {
+      position: absolute;
+      width: 269px;
+      height: 54px;
+      top: 40px;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+
+      color: #444444;
     }
 
-    .section_two {
+    .sport {
+      // position: absolute;
+      width: 300px;
+      height: 120px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/three.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+
+      .text_centr {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        /* identical to box height */
+
         display: flex;
-        height: 650px;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-        height: 781px;
-        flex-direction: column;
+        align-items: flex-end;
+        text-align: center;
 
-        .h_one {
-            // position: absolute;
-            width: 289px;
-            height: 27px;
-            top: 550px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-
-            display: flex;
-            color: #444444;
-        }
-
-        .img_sec_two {
-            // position: absolute;
-            margin-top: 110px;
-            width: 200px;
-            height: 220px;
-        }
-
-        .img_sec_tree {
-
-            // position: absolute;
-            width: 200px;
-            height: 220px;
-            left: 0px;
-            top: 291px;
-        }
-
-        .img_sec_four {
-            // position: absolute;
-            width: 200px;
-            height: 220px;
-            left: 0px;
-            top: 541px;
-        }
-    }
-
-    .section_tree {
-        position: absolute;
-        width: 300px;
-        height: 900px;
-        left: calc(50% - 300px/2);
-        top: 1392px;
-
-        .h_two {
-            position: absolute;
-            width: 280px;
-            height: 54px;
-            left: 10px;
-            top: 0px;
-
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-
-            color: #444444;
-        }
-
-        .img_sec_ {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            left: calc(50% - 150px/2);
-            top: 68px;
-        }
-        .name1{
-          left: 105px;
-          top: 220px;
+        color: #d1d1d1;
       }
-
-        .img_sec_five {
-            // position: absolute;
-            width: 150px;
-            height: 150px;
-            left: calc(50% - 150px/2);
-            top: 269px;
-        }
-        .name2{
-          left: 105px;
-          top: 420px;
-      }
-
-        .img_sec_six {
-            // position: absolute;
-            width: 150px;
-            height: 150px;
-            left: calc(50% - 150px/2);
-            top: 469px;
-        }
-        .name3{
-          left: 95px;
-          top: 620px;
-      }
-
-        .img_sec_seven {
-            // position: absolute;
-            width: 150px;
-            height: 150px;
-            left: calc(50% - 150px/2);
-            top: 660px;
-        }
-        .name4{
-          left: 95px;
-          top: 813px;
-      }
-
-        .withe_but {
-            // position: absolute;
-            width: 280px;
-            height: 40px;
-            left: 10px;
-            top: 850px;
-
-            background-color: #b1b1b1;
-            border: 2px solid #000000;
-            box-sizing: border-box;
-            border-radius: 40px;
-
-            .small_textt {
-                // position: absolute;
-                width: 137px;
-                height: 17px;
-                left: 70px;
-                top: 10px;
-
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 17px;
-                /* identical to box height */
-
-                display: flex;
-                align-items: flex-end;
-
-                color: #000000;
-            }
-        }
     }
 
-    .section_for {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        position: relative;
-        flex-wrap: wrap;
-        // width: 300px;
-        height: 1280px;
-        margin-top: 950px;
+    .health {
+      width: 300px;
+      height: 120px;
 
-        .h_tree {
-            position: absolute;
-            width: 269px;
-            height: 54px;
-            top: 40px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/sea_star.jpg);
 
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-
-            color: #444444;
-        }
-
-        .sport {
-            // position: absolute;
-            width: 300px;
-            height: 120px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/three.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-
-            .text_centr {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 22px;
-                line-height: 27px;
-                /* identical to box height */
-
-                display: flex;
-                align-items: flex-end;
-                text-align: center;
-
-                color:  #d1d1d1;
-            }
-        }
-
-        .health {
-            width: 300px;
-            height: 120px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/sea_star.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .extreme {
-            width: 300px;
-            height: 120px;
-
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/three.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .games {
-            width: 300px;
-            height: 120px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/new_images/mike_2.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .culture_copy {
-            width: 300px;
-            height: 120px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .culture {
-            width: 300px;
-            height: 120px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/mando.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
-
-        .games_copy {
-            width: 300px;
-            height: 120px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url(./img/section_tree/newS3/sec_3.jpg);
-
-            mix-blend-mode: normal;
-            border-radius: 4px;
-        }
+      mix-blend-mode: normal;
+      border-radius: 4px;
     }
 
-    .login {
-        position: relative;
-        display: inline-block;
-        justify-content: center;
-        width: 345px;
-        height: 192px;
-        left: calc(50% - 345px/2);
-        top: -70px;
-        align-items: center;
+    .extreme {
+      width: 300px;
+      height: 120px;
 
-        .h_for {
-            position: absolute;
-            width: 280px;
-            height: 54px;
-            left: calc(50% - 280px/2);
-            top: -6px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/three.jpg);
 
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-
-            color: #363636;
-        }
-
-        .text {
-            position: absolute;
-            width: 290px;
-            height: 24px;
-            left: calc(50% - 290px/2);
-            top: 63px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 14px;
-
-            color: #444;
-        }
+      mix-blend-mode: normal;
+      border-radius: 4px;
     }
 
-    .pace {
-        position: absolute;
-        width: 280px;
-        height: 90px;
-        left: calc(50% - 280px/2);
-        top: 102px;
+    .games {
+      width: 300px;
+      height: 120px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/new_images/mike_2.jpg);
 
-        .input {
-            position: absolute;
-            width: 280px;
-            height: 40px;
-            left: -8px;
-            top: 0px;
-
-            background: #FFFFFF;
-            border: 1px solid #D4D4D4;
-            box-sizing: border-box;
-            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
-            border-radius: 3px;
-        }
-
-        .butt {
-            position: absolute;
-            width: 280px;
-            height: 40px;
-            left: -8px;
-            top: 50px;
-
-            background: #ffffff8a;
-            border-radius: 40px;
-        }
+      mix-blend-mode: normal;
+      border-radius: 4px;
     }
 
+    .culture_copy {
+      width: 300px;
+      height: 120px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
 
-    .info {
-        
-        width: 320px;
-        height: 254px;
-        left: calc(50% - 320px/2);
-        top: 3712px;
-
-        .red_line {
-            width: 100%;
-            height: 2px;
-            left: 0px;
-            top: 0px;
-
-            background: #000000;
-        }
-
-        .red {
-            position: absolute;
-            width: 119px;
-            height: 20px;
-            left: 101px;
-            top: 21px;
-            
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 20px;
-            
-            color: #000000;
-        }
-
-        .company {
-            width: 70px;
-            height: 17px;
-            left: 125px;
-            top: 54px;
-            
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-            
-            display: flex;
-            align-items: flex-end;
-            text-align: center;
-            
-            color: #444444;
-        }
-
-        .partners {
-            position: absolute;
-            width: 64px;
-            height: 17px;
-            left: 127.5px;
-            top: 130px;
-            
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-
-            display: flex;
-            align-items: flex-end;
-            
-            color: #444444;
-        }
-
-        .contact {
-            position: absolute;
-            width: 40px;
-            height: 156px;
-            left: 266px;
-            top: 68px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 26px;
-            color: #999999;
-        }
-
-        .abou {
-            position: absolute;
-            width: 40px;
-            height: 26px;
-            left: 49px;
-            top: 70px;
-            text-decoration: none;
-        }
-
-        .cont {
-            position: absolute;
-            width: 40px;
-            height: 26px;
-            left: 105px;
-            top: 70px;
-            text-decoration: none;
-        }
-
-        .pres {
-            position: absolute;
-            width: 40px;
-            height: 26px;
-            left: 174px;
-            top: 71px;
-            text-decoration: none;
-        }
-
-        .blog {
-
-            position: absolute;
-            width: 40px;
-            height: 26px;
-            left: 230px;
-            top: 72px;
-            text-decoration: none;
-        }
-
-        .tap {
-            position: absolute;
-            width: 114px;
-            height: 26px;
-            left: 65px;
-            top: 99px;
-            text-decoration: none;
-        }
-
-        .help {
-            position: absolute;
-            width: 40px;
-            height: 26px;
-            left: 196px;
-            top: 100px;
-            text-decoration: none;
-            color: #999999;
-        }
-
-        .desig {
-            position: absolute;
-            width: 83px;
-            height: 12px;
-            left: 120px;
-            top: 161px;
-            
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 10px;
-            line-height: 12px;
-            display: flex;
-            align-items: flex-end;
-            letter-spacing: 1px;
-            
-            color: #444444;
-        }
-
-        .logoo {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            left: 133px;
-            top: 180px;
-        }
+      mix-blend-mode: normal;
+      border-radius: 4px;
     }
+
+    .culture {
+      width: 300px;
+      height: 120px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/mando.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+
+    .games_copy {
+      width: 300px;
+      height: 120px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(./img/section_tree/newS3/sec_3.jpg);
+
+      mix-blend-mode: normal;
+      border-radius: 4px;
+    }
+  }
+
+  .login {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    width: 345px;
+    height: 192px;
+    left: calc(50% - 345px / 2);
+    top: -70px;
+    align-items: center;
+
+    .h_for {
+      position: absolute;
+      width: 280px;
+      height: 54px;
+      left: calc(50% - 280px / 2);
+      top: -6px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #363636;
+    }
+
+    .text {
+      position: absolute;
+      width: 290px;
+      height: 24px;
+      left: calc(50% - 290px / 2);
+      top: 63px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 14px;
+
+      color: #444;
+    }
+  }
+
+  .pace {
+    position: absolute;
+    width: 280px;
+    height: 90px;
+    left: calc(50% - 280px / 2);
+    top: 102px;
+
+    .input {
+      position: absolute;
+      width: 280px;
+      height: 40px;
+      left: -8px;
+      top: 0px;
+
+      background: #ffffff;
+      border: 1px solid #d4d4d4;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+      border-radius: 3px;
+    }
+
+    .butt {
+      position: absolute;
+      width: 280px;
+      height: 40px;
+      left: -8px;
+      top: 50px;
+
+      background: #ffffff8a;
+      border-radius: 40px;
+    }
+  }
+
+  .info {
+    width: 320px;
+    height: 254px;
+    left: calc(50% - 320px / 2);
+    top: 3712px;
+
+    .red_line {
+      width: 100%;
+      height: 2px;
+      left: 0px;
+      top: 0px;
+
+      background: #000000;
+    }
+
+    .red {
+      position: absolute;
+      width: 119px;
+      height: 20px;
+      left: 101px;
+      top: 21px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+
+      color: #000000;
+    }
+
+    .company {
+      width: 70px;
+      height: 17px;
+      left: 125px;
+      top: 54px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #444444;
+    }
+
+    .partners {
+      position: absolute;
+      width: 64px;
+      height: 17px;
+      left: 127.5px;
+      top: 130px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+
+      display: flex;
+      align-items: flex-end;
+
+      color: #444444;
+    }
+
+    .contact {
+      position: absolute;
+      width: 40px;
+      height: 156px;
+      left: 266px;
+      top: 68px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 26px;
+      color: #999999;
+    }
+
+    .abou {
+      position: absolute;
+      width: 40px;
+      height: 26px;
+      left: 49px;
+      top: 70px;
+      text-decoration: none;
+    }
+
+    .cont {
+      position: absolute;
+      width: 40px;
+      height: 26px;
+      left: 105px;
+      top: 70px;
+      text-decoration: none;
+    }
+
+    .pres {
+      position: absolute;
+      width: 40px;
+      height: 26px;
+      left: 174px;
+      top: 71px;
+      text-decoration: none;
+    }
+
+    .blog {
+      position: absolute;
+      width: 40px;
+      height: 26px;
+      left: 230px;
+      top: 72px;
+      text-decoration: none;
+    }
+
+    .tap {
+      position: absolute;
+      width: 114px;
+      height: 26px;
+      left: 65px;
+      top: 99px;
+      text-decoration: none;
+    }
+
+    .help {
+      position: absolute;
+      width: 40px;
+      height: 26px;
+      left: 196px;
+      top: 100px;
+      text-decoration: none;
+      color: #999999;
+    }
+
+    .desig {
+      position: absolute;
+      width: 83px;
+      height: 12px;
+      left: 120px;
+      top: 161px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 1px;
+
+      color: #444444;
+    }
+
+    .logoo {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 133px;
+      top: 180px;
+    }
+  }
 }
