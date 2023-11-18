@@ -1,0 +1,383 @@
+.section_tree {
+  position: absolute;
+  width: 941px;
+  height: 361px;
+  left: calc(50% - 940px / 2);
+  top: 1351px;
+  // naming
+  .h_two {
+    position: absolute;
+    width: 491px;
+    height: 32px;
+    left: 226px;
+    top: -6px;
+
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #444444;
+  }
+  // naming
+  .img_sec_ {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center -50px;
+    border-radius: 50%;
+    left: 30px;
+    top: 61px;
+    // transition issue
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_:hover {
+    border-radius: 20%;
+  }
+  // naming - якщо нумерація цього елемента в htlm змінить назва стане неактуальною і
+  // доведеться міняти всюди це, це стосується всіх нумерацій у назвах
+  .name1 {
+    position: absolute;
+    left: 60px;
+    top: 220px;
+  }
+  // naming
+  .img_sec_five {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    left: 270px;
+    top: 61px;
+    // transition issue
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_five:hover {
+    border-radius: 20%;
+  }
+  // naming
+  .name2 {
+    position: absolute;
+    left: 300px;
+    top: 220px;
+  }
+  // naming
+  .img_sec_six {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    left: 510px;
+    top: 61px;
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_six:hover {
+    border-radius: 20%;
+  }
+  // naming
+  .name3 {
+    position: absolute;
+    left: 535px;
+    top: 220px;
+  }
+  // naming
+  .img_sec_seven {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    left: 750px;
+    top: 61px;
+    transition: 0.2s;
+  }
+  // naming and nesting
+  .img_sec_seven:hover {
+    border-radius: 20%;
+  }
+  // naming
+  .name4 {
+    position: absolute;
+    left: 775px;
+    top: 220px;
+  }
+  // naming - не скорочуй назви до нечитабельних (я чесно не розумію що тут написано)
+  .withe_but {
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    left: 380px;
+    top: 270px;
+
+    background-color: #b1b1b1;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    // намагайся відслідковувати щоб не було доруківок
+    .small_textt {
+      position: absolute;
+      width: 137px;
+      height: 17px;
+      left: 21px;
+      top: 9px;
+
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: #000000;
+      // transition issue
+      transition: 0.2s;
+    }
+    // nesting
+    .small_textt:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .section_tree {
+    position: absolute;
+    width: 492px;
+    height: 905px;
+    left: calc(50% - 492px / 2);
+    // те саме про розмір позіціонування
+    top: 1351px;
+    // naming
+    .h_two {
+      position: absolute;
+      width: 416px;
+      height: 27px;
+      left: 38px;
+      top: -20px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #444444;
+    }
+
+    .img_sec_ {
+      position: absolute;
+      width: 236px;
+      height: 236px;
+      left: 0px;
+      top: 61px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .name1 {
+      position: absolute;
+      left: 70px;
+      top: 30px;
+      font-family: Montserrat;
+      color: #000000;
+    }
+
+    .img_sec_five {
+      position: absolute;
+      width: 236px;
+      height: 236px;
+      left: 256px;
+      top: 61px;
+      object-fit: cover;
+    }
+    .name2 {
+      position: absolute;
+      left: 330px;
+      top: 30px;
+      font-family: Montserrat;
+    }
+
+    .img_sec_six {
+      position: absolute;
+      width: 236px;
+      height: 236px;
+      left: 0px;
+      top: 350px;
+    }
+    .name3 {
+      position: absolute;
+      left: 60px;
+      top: 320px;
+      font-family: Montserrat;
+    }
+
+    .img_sec_seven {
+      position: absolute;
+      width: 236px;
+      height: 236px;
+      left: 256px;
+      top: 350px;
+    }
+    .name4 {
+      position: absolute;
+      left: 320px;
+      top: 320px;
+      font-family: Montserrat;
+    }
+
+    .withe_but {
+      position: absolute;
+      width: 180px;
+      height: 40px;
+      left: 156px;
+      top: 605px;
+
+      background: #b1b1b1;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      border-radius: 40px;
+
+      .small_textt {
+        position: absolute;
+        width: 137px;
+        height: 17px;
+        left: 21px;
+        top: 9px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+
+        display: flex;
+        align-items: flex-end;
+
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .section_tree {
+    position: absolute;
+    width: 300px;
+    height: 900px;
+    left: calc(50% - 300px / 2);
+    top: 1392px;
+
+    .h_two {
+      position: absolute;
+      width: 280px;
+      height: 54px;
+      left: 10px;
+      top: 0px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      color: #444444;
+    }
+
+    .img_sec_ {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 68px;
+    }
+    .name1 {
+      left: 105px;
+      top: 220px;
+    }
+
+    .img_sec_five {
+      // position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 269px;
+    }
+    .name2 {
+      left: 105px;
+      top: 420px;
+    }
+
+    .img_sec_six {
+      // position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 469px;
+    }
+    .name3 {
+      left: 95px;
+      top: 620px;
+    }
+
+    .img_sec_seven {
+      // position: absolute;
+      width: 150px;
+      height: 150px;
+      left: calc(50% - 150px / 2);
+      top: 660px;
+    }
+    .name4 {
+      left: 95px;
+      top: 813px;
+    }
+
+    .withe_but {
+      // position: absolute;
+      width: 280px;
+      height: 40px;
+      left: 10px;
+      top: 850px;
+
+      background-color: #b1b1b1;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      border-radius: 40px;
+
+      .small_textt {
+        // position: absolute;
+        width: 137px;
+        height: 17px;
+        left: 70px;
+        top: 10px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: flex-end;
+
+        color: #000000;
+      }
+    }
+  }
+}

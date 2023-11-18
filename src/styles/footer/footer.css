@@ -1,0 +1,648 @@
+.login {
+  position: absolute;
+  display: inline;
+  width: 482px;
+  height: 158px;
+  left: calc(50% - 241px);
+  top: 2932px;
+}
+.login .h_for {
+  position: absolute;
+  width: 358px;
+  height: 32px;
+  left: 60px;
+  top: -6px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  color: #444444;
+}
+.login .text {
+  position: absolute;
+  display: inline;
+  width: 275px;
+  height: 24px;
+  left: calc(50% - 137.5px);
+  top: 55px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #666666;
+}
+
+.pace {
+  position: absolute;
+  width: 482px;
+  height: 40px;
+  left: 0px;
+  top: 118px;
+}
+.pace .input {
+  position: absolute;
+  width: 299px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+  border-radius: 3px;
+}
+.pace .butt {
+  position: absolute;
+  width: 172.12px;
+  height: 40px;
+  left: 309px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.5411764706);
+  border-radius: 40px;
+  transition: 0.2s;
+}
+.pace .butt:hover {
+  scale: 1.07;
+}
+.pace .decor {
+  text-decoration: none;
+}
+
+.info {
+  position: absolute;
+  width: 100%;
+  height: 225px;
+  justify-content: center;
+  top: 3200px;
+}
+.info .red_line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+}
+.info .red {
+  position: absolute;
+  width: 119px;
+  height: 20px;
+  left: 249px;
+  top: 38px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  transform: 0.2s;
+}
+.info .red:hover {
+  scale: 1.2;
+}
+.info .company {
+  position: absolute;
+  width: 70px;
+  height: 17px;
+  left: 490px;
+  top: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  color: #464646;
+}
+.info .partners {
+  position: absolute;
+  width: 64px;
+  height: 17px;
+  left: 729px;
+  top: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  color: #464646;
+}
+.info .contact {
+  position: absolute;
+  width: 114px;
+  height: 26px;
+  left: 490px;
+  top: 68px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  transition: 0.2;
+  color: #000000;
+}
+.info .contact:hover {
+  color: #000000;
+  scale: 1.1;
+}
+.info .abou {
+  position: absolute;
+  width: 114px;
+  height: 26px;
+  left: 490px;
+  top: 65px;
+  text-decoration: none;
+}
+.info .cont {
+  position: absolute;
+  width: 114px;
+  height: 26px;
+  left: 490px;
+  top: 95px;
+  text-decoration: none;
+}
+.info .pres {
+  position: absolute;
+  width: 114px;
+  height: 26px;
+  left: 490px;
+  top: 125px;
+  text-decoration: none;
+}
+.info .blog {
+  position: absolute;
+  width: 114px;
+  height: 26px;
+  left: 490px;
+  top: 155px;
+  text-decoration: none;
+}
+.info .tap {
+  position: absolute;
+  width: 114px;
+  height: 26px;
+  left: 490px;
+  top: 185px;
+  text-decoration: none;
+}
+.info .help {
+  position: absolute;
+  width: 114px;
+  height: 26px;
+  left: 490px;
+  top: 215px;
+  text-decoration: none;
+}
+.info .desig {
+  position: absolute;
+  width: 83px;
+  height: 12px;
+  left: calc(55% + 232.5px);
+  top: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  color: #727272;
+}
+.info .logoo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: calc(55% + 247.5px);
+  top: 65px;
+}
+
+@media screen and (max-width: 1160px) {
+  .login {
+    position: absolute;
+    display: inline;
+    width: 482px;
+    height: 158px;
+    left: calc(50% - 241px);
+    top: 3155px;
+  }
+  .login .h_for {
+    position: absolute;
+    width: 358px;
+    height: 32px;
+    left: 62.5px;
+    top: -6px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #444444;
+  }
+  .login .text {
+    position: absolute;
+    width: 415px;
+    height: 24px;
+    left: 90px;
+    top: 69px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 14px;
+    /* or 78% */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #666666;
+  }
+  .pace {
+    position: absolute;
+    width: 482px;
+    height: 40px;
+    left: 0px;
+    top: 118px;
+  }
+  .pace .input {
+    position: absolute;
+    width: 299px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+  }
+  .pace .butt {
+    position: absolute;
+    width: 172.12px;
+    height: 40px;
+    left: 309px;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.5411764706);
+    border-radius: 40px;
+  }
+  .pace .butt:hover {
+    scale: 1.07;
+  }
+  .info {
+    display: flex;
+    width: 720px;
+    height: 224px;
+    left: calc(50% - 360px);
+    top: 3335px;
+  }
+  .info .red_line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+  }
+  .info .red {
+    position: absolute;
+    width: 119px;
+    height: 20px;
+    left: 39px;
+    top: 38px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+  }
+  .info .company {
+    position: absolute;
+    width: 70px;
+    height: 17px;
+    left: 266px;
+    top: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+  }
+  .info .partners {
+    position: absolute;
+    width: 64px;
+    height: 17px;
+    left: 436px;
+    top: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-end;
+    color: #444444;
+  }
+  .info .contact {
+    position: absolute;
+    width: 114px;
+    height: 156px;
+    left: 266px;
+    top: 68px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+  }
+  .info .abou {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 266px;
+    top: 65px;
+    text-decoration: none;
+  }
+  .info .cont {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 266px;
+    top: 95px;
+    text-decoration: none;
+  }
+  .info .pres {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 266px;
+    top: 125px;
+    text-decoration: none;
+  }
+  .info .blog {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 266px;
+    top: 155px;
+    text-decoration: none;
+  }
+  .info .tap {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 266px;
+    top: 185px;
+    text-decoration: none;
+  }
+  .info .help {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 266px;
+    top: 215px;
+    text-decoration: none;
+  }
+  .info .desig {
+    position: absolute;
+    width: 83px;
+    height: 12px;
+    left: 585px;
+    top: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: black;
+  }
+  .info .logoo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 620px;
+    top: 59px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .login {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    width: 345px;
+    height: 192px;
+    left: calc(50% - 172.5px);
+    top: -70px;
+    align-items: center;
+  }
+  .login .h_for {
+    position: absolute;
+    width: 280px;
+    height: 54px;
+    left: calc(50% - 140px);
+    top: -6px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #363636;
+  }
+  .login .text {
+    position: absolute;
+    width: 290px;
+    height: 24px;
+    left: calc(50% - 145px);
+    top: 63px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 14px;
+    color: #444;
+  }
+  .pace {
+    position: absolute;
+    width: 280px;
+    height: 90px;
+    left: calc(50% - 140px);
+    top: 102px;
+  }
+  .pace .input {
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    left: -8px;
+    top: 0px;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+  }
+  .pace .butt {
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    left: -8px;
+    top: 50px;
+    background: rgba(255, 255, 255, 0.5411764706);
+    border-radius: 40px;
+  }
+  .info {
+    width: 320px;
+    height: 254px;
+    left: calc(50% - 160px);
+    top: 3712px;
+  }
+  .info .red_line {
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+  }
+  .info .red {
+    position: absolute;
+    width: 119px;
+    height: 20px;
+    left: 101px;
+    top: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .info .company {
+    width: 70px;
+    height: 17px;
+    left: 125px;
+    top: 54px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #444444;
+  }
+  .info .partners {
+    position: absolute;
+    width: 64px;
+    height: 17px;
+    left: 127.5px;
+    top: 130px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-end;
+    color: #444444;
+  }
+  .info .contact {
+    position: absolute;
+    width: 40px;
+    height: 156px;
+    left: 266px;
+    top: 68px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+  }
+  .info .abou {
+    position: absolute;
+    width: 40px;
+    height: 26px;
+    left: 49px;
+    top: 70px;
+    text-decoration: none;
+  }
+  .info .cont {
+    position: absolute;
+    width: 40px;
+    height: 26px;
+    left: 105px;
+    top: 70px;
+    text-decoration: none;
+  }
+  .info .pres {
+    position: absolute;
+    width: 40px;
+    height: 26px;
+    left: 174px;
+    top: 71px;
+    text-decoration: none;
+  }
+  .info .blog {
+    position: absolute;
+    width: 40px;
+    height: 26px;
+    left: 230px;
+    top: 72px;
+    text-decoration: none;
+  }
+  .info .tap {
+    position: absolute;
+    width: 114px;
+    height: 26px;
+    left: 65px;
+    top: 99px;
+    text-decoration: none;
+  }
+  .info .help {
+    position: absolute;
+    width: 40px;
+    height: 26px;
+    left: 196px;
+    top: 100px;
+    text-decoration: none;
+    color: #999999;
+  }
+  .info .desig {
+    position: absolute;
+    width: 83px;
+    height: 12px;
+    left: 120px;
+    top: 161px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1px;
+    color: #444444;
+  }
+  .info .logoo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 133px;
+    top: 180px;
+  }
+}/*# sourceMappingURL=footer.css.map */
