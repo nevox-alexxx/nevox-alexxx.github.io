@@ -364,10 +364,9 @@ html {
   line-height: 24px;
   display: inline-block;
   align-items: flex-start;
-  color: #D4D4D4;
+  color: #d4d4d4;
   transition: 0.2s;
 }
-
 .logo:hover {
   scale: 1.2;
   cursor: pointer;
@@ -382,13 +381,13 @@ html {
   line-height: 20px;
   margin: 10px auto;
   justify-content: center;
-  border: 2px solid #D4D4D4;
+  border: 2px solid #d4d4d4;
   box-sizing: border-box;
   border-radius: 40px;
 }
 .border .signUp {
   text-decoration: none;
-  color: #D4D4D4;
+  color: #d4d4d4;
   font-size: 17px;
   line-height: 17px;
   transition: 0.2s;
@@ -410,7 +409,7 @@ html {
   font-size: 17px;
   line-height: 17px;
   text-decoration: none;
-  color: #D4D4D4;
+  color: #d4d4d4;
   transition: 0.2s;
 }
 
@@ -428,7 +427,7 @@ html {
   top: 170px;
   line-height: 70px;
   text-align: center;
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .smal_tittle {
@@ -442,7 +441,7 @@ html {
   font-weight: bold;
   line-height: 24px;
   text-align: center;
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .red_butt {
@@ -458,7 +457,7 @@ html {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #D4D4D4;
+  color: #d4d4d4;
   transition: 0.2s;
   text-decoration: none;
 }
@@ -473,7 +472,7 @@ html {
   height: 40px;
   font-size: 16px;
   font-weight: bold;
-  border: 3px solid #D4D4D4;
+  border: 3px solid #d4d4d4;
   border-radius: 40px;
   cursor: pointer;
   transition: 1.7s;
@@ -484,7 +483,7 @@ html {
 }
 
 body {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
 }
 
 .section_two {
@@ -625,7 +624,7 @@ body {
   border-radius: 50%;
   left: 750px;
   top: 61px;
-  transition: 0.2S;
+  transition: 0.2s;
 }
 .section_tree .img_sec_seven:hover {
   border-radius: 20%;
@@ -673,7 +672,7 @@ body {
   height: 1031px;
   margin-top: 430px;
 }
-.section_for .text_centr {
+.section_for .text_center {
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
@@ -849,8 +848,8 @@ body {
   height: 40px;
   left: 0px;
   top: 0px;
-  background: #FFFFFF;
-  border: 1px solid #D4D4D4;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
   box-sizing: border-box;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
   border-radius: 3px;
@@ -1039,7 +1038,7 @@ body {
     line-height: 24px;
     display: inline-block;
     align-items: flex-start;
-    color: #D4D4D4;
+    color: #d4d4d4;
   }
   .log_in_b {
     display: inline;
@@ -1054,7 +1053,7 @@ body {
     font-size: 17px;
     line-height: 17px;
     text-decoration: none;
-    color: #D4D4D4;
+    color: #d4d4d4;
   }
   .border {
     display: inline;
@@ -1065,13 +1064,13 @@ body {
     line-height: 20px;
     margin: 10px auto;
     justify-content: center;
-    border: 2px solid #D4D4D4;
+    border: 2px solid #d4d4d4;
     box-sizing: border-box;
     border-radius: 40px;
   }
   .border .signUp {
     text-decoration: none;
-    color: #D4D4D4;
+    color: #d4d4d4;
     font-family: Montserrat;
     font-size: 17px;
     line-height: 17px;
@@ -1088,9 +1087,9 @@ body {
     top: 170px;
     line-height: 70px;
     text-align: center;
-    color: #D4D4D4;
+    color: #d4d4d4;
   }
-  .smal_tittle {
+  .small_tittle {
     position: relative;
     display: flex;
     justify-content: center;
@@ -1102,7 +1101,7 @@ body {
     font-weight: bold;
     line-height: 24px;
     text-align: center;
-    color: #D4D4D4;
+    color: #d4d4d4;
   }
   .red_butt {
     position: absolute;
@@ -1456,8 +1455,8 @@ body {
     height: 40px;
     left: 0px;
     top: 0px;
-    background: #FFFFFF;
-    border: 1px solid #D4D4D4;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
     box-sizing: border-box;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
     border-radius: 3px;
@@ -1633,7 +1632,7 @@ body {
     line-height: 24px;
     display: inline-block;
     align-items: flex-start;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .log_in_b {
     display: inline;
@@ -1649,7 +1648,7 @@ body {
     line-height: 17px;
     /* identical to box height */
     text-decoration: none;
-    color: #D4D4D4;
+    color: #d4d4d4;
   }
   .border {
     display: inline;
@@ -1660,13 +1659,13 @@ body {
     line-height: 20px;
     margin: 10px auto;
     justify-content: center;
-    border: 2px solid #D4D4D4;
+    border: 2px solid #d4d4d4;
     box-sizing: border-box;
     border-radius: 40px;
   }
   .border .signUp {
     text-decoration: none;
-    color: #D4D4D4;
+    color: #d4d4d4;
     font-family: Montserrat;
     font-size: 17px;
     line-height: 17px;
@@ -1683,7 +1682,7 @@ body {
     top: 130px;
     line-height: 70px;
     text-align: center;
-    color: #D4D4D4;
+    color: #d4d4d4;
   }
   .smal_tittle {
     position: relative;
@@ -1698,7 +1697,7 @@ body {
     font-weight: bold;
     line-height: 24px;
     text-align: center;
-    color: #D4D4D4;
+    color: #d4d4d4;
   }
   .red_butt {
     position: absolute;
@@ -2003,8 +2002,8 @@ body {
     height: 40px;
     left: -8px;
     top: 0px;
-    background: #FFFFFF;
-    border: 1px solid #D4D4D4;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
     box-sizing: border-box;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
     border-radius: 3px;
