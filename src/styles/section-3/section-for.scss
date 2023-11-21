@@ -1,3 +1,14 @@
+$alies-img: '../img/section_tree/alies.jpg' ;
+$sea-img: '../img/section_tree/sea_star.jpg';
+$new-suit: '../img/section_tree/red-suit.webp';
+$bloody-helmet:'../img/new_images/mike_2.jpg';
+$battle-field:'../img/section_tree/battle-field.jpg';
+$mando-img:'../img/section_tree/mando.jpg';
+$tatooine-img:'../img/section_tree/tatooine.jpg';
+
+$transition-scale: 1.1;
+
+
 .section_for {
   display: flex;
   justify-content: center;
@@ -8,14 +19,14 @@
   height: 1031px;
   margin-top: 430px;
 
-  .text_center {
+  .text_centr {
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
     background-color: #666666b9;
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     justify-content: center;
 
@@ -23,44 +34,39 @@
   }
 
   .sport {
-    // не залишай зайвий закоментований код
-    // position: absolute;
     width: 297px;
     height: 310px;
     left: 0px;
     top: 61px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./img/section_tree/newS3/three.jpg);
+    background-image: url($alies-img);
 
     mix-blend-mode: normal;
     border-radius: 4px;
     // transition issue
     transition: 0.2s;
-  }
-  // nesting
-  .sport:hover {
-    scale: 1.1;
+    &:hover {
+      scale: $transition-scale;
+    }
   }
 
+
   .health {
-    // не залишай зайвий закоментований код
-    // position: absolute;
     width: 296px;
     height: 310px;
     left: 320px;
     top: 61px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./img/section_tree/newS3/sea_star.jpg);
+    background-image: url($sea-img);
 
     mix-blend-mode: normal;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  // nesting
-  .health:hover {
-    scale: 1.1;
+    &:hover {
+      scale: $transition-scale;
+    }
   }
 
   .extreme {
@@ -69,35 +75,31 @@
     justify-content: flex-start;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./img/section_tree/newS3/three.jpg);
+    background-image: url($new-suit);
 
     mix-blend-mode: normal;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  // nesting
-  .extreme:hover {
-    scale: 1.1;
+    &:hover {
+      scale: $transition-scale;
+    }
   }
 
   .games {
-    // не залишай зайвий закоментований код
-    // position: absolute;
     width: 300px;
     height: 310px;
     left: 0px;
     top: 391px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./img/new_images/mike_2.jpg);
+    background-image: url($bloody-helmet);
 
     mix-blend-mode: normal;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  // nesting
-  .games:hover {
-    scale: 1.1;
+    &:hover {
+      scale: $transition-scale;
+    }
   }
   // не зовсім розумію сенс назви, якщо в тебе все однакове і відрізняється тільки background-image -
   // можна зробити один клас, який буде задавати загальні стилі і інші класи які будуть задавати тільки background-image
@@ -106,15 +108,14 @@
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
+    background-image: url($battle-field);
 
     mix-blend-mode: normal;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  // nesting
-  .culture_copy:hover {
-    scale: 1.05;
+    &:hover {
+      scale: $transition-scale;
+    }
   }
 
   .culture {
@@ -122,15 +123,14 @@
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./img/section_tree/newS3/mando.jpg);
+    background-image: url($mando-img);
 
     mix-blend-mode: normal;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  // nesting
-  .culture:hover {
-    scale: 1.05;
+    &:hover {
+      scale: $transition-scale;
+    }
   }
   // те саме стосовно назви і схожих параметрів
   .games_copy {
@@ -139,16 +139,16 @@
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./img/section_tree/newS3/sec_3.jpg);
+    background-image: url($tatooine-img);
 
     mix-blend-mode: normal;
     border-radius: 4px;
     transition: 0.2s;
+    &:hover {
+      scale: $transition-scale;
+    }
   }
-  // nesting
-  .games_copy:hover {
-    scale: 1.1;
-  }
+  
   // naming
   .h_tree {
     position: absolute;
@@ -156,8 +156,6 @@
     height: 30px;
     top: -80px;
 
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
@@ -180,8 +178,6 @@
     margin-top: 800px;
 
     .text_centr {
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: bold;
       font-size: 22px;
       line-height: 27px;
@@ -202,8 +198,6 @@
       justify-content: center;
       top: -90px;
 
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: bold;
       font-size: 22px;
       line-height: 27px;
@@ -223,14 +217,13 @@
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/three.jpg);
+      background-image: url($alies-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
     }
 
     .health {
-      // position: absolute;
       width: 210px;
       height: 310px;
       left: 320px;
@@ -238,7 +231,7 @@
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/sea_star.jpg);
+      background-image: url($sea-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -250,7 +243,7 @@
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/three.jpg);
+      background-image: url($new-suit);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -261,19 +254,18 @@
       height: 310px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/new_images/mike_2.jpg);
+      background-image: url($bloody-helmet);
 
       mix-blend-mode: normal;
       border-radius: 4px;
     }
     .culture_copy {
-      // position: absolute;
       width: 436px;
       height: 310px;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
+      background-image: url($battle-field);
       object-fit: cover;
       object-position: 0px;
 
@@ -282,26 +274,24 @@
     }
 
     .culture {
-      // position: absolute;
       width: 436px;
       height: 310px;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/mando.jpg);
+      background-image: url($mando-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
     }
 
     .games_copy {
-      // position: absolute;
       width: 210px;
       height: 310px;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/sec_3.jpg);
+      background-image: url($tatooine-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -318,7 +308,6 @@
     align-items: center;
     position: relative;
     flex-wrap: wrap;
-    // width: 300px;
     height: 1280px;
     margin-top: 950px;
 
@@ -328,7 +317,6 @@
       height: 54px;
       top: 40px;
 
-      font-style: normal;
       font-weight: bold;
       font-size: 22px;
       line-height: 27px;
@@ -337,24 +325,20 @@
     }
 
     .sport {
-      // position: absolute;
       width: 300px;
       height: 120px;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/three.jpg);
+      background-image: url($alies-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
 
       .text_centr {
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: bold;
         font-size: 22px;
         line-height: 27px;
-        /* identical to box height */
 
         display: flex;
         align-items: flex-end;
@@ -370,7 +354,7 @@
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/sea_star.jpg);
+      background-image: url($sea-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -382,7 +366,7 @@
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/three.jpg);
+      background-image: url($new-suit);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -393,7 +377,7 @@
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/new_images/mike_2.jpg);
+      background-image: url($bloody-helmet);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -404,7 +388,7 @@
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/wp3390444-wallpaper-star-war.jpg);
+      background-image: url($battle-field);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -415,7 +399,7 @@
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/mando.jpg);
+      background-image: url($mando-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -426,7 +410,7 @@
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url(./img/section_tree/newS3/sec_3.jpg);
+      background-image: url($tatooine-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;

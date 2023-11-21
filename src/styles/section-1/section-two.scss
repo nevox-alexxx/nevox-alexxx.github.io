@@ -1,3 +1,4 @@
+
 .section_two {
   display: flex;
   height: 650px;
@@ -23,30 +24,28 @@
     width: 300px;
     height: 400px;
     transition: 0.2s;
-  }
-  // nesting
-  .img_sec_two:hover {
+    &:hover {
     transform: scale(1.1);
+    }
   }
   // naming
   .img_sec_tree {
     width: 300px;
     height: 400px;
     transition: 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      }
   }
-  // naming and nesting
-  .img_sec_tree:hover {
-    transform: scale(1.1);
-  }
+  
   // naming
   .img_sec_four {
     width: 300px;
     height: 400px;
     transition: 0.2s;
-  }
-  // naming and nesting
-  .img_sec_four:hover {
-    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.1);
+      }
   }
 }
 
@@ -64,13 +63,9 @@
       height: 27px;
       top: 730px;
 
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: bold;
       font-size: 22px;
       line-height: 27px;
-      // unused comments
-      /* identical to box height */
 
       display: flex;
       align-items: flex-end;
@@ -85,30 +80,31 @@
       object-fit: cover;
       // transition issue
       transition: 0.2s;
+      &:hover {
+        transform: scale(1.1);
+        }
     }
-    // nesting
-    .img_sec_two:hover {
-      transform: scale(1.1);
-    }
+
     // naming
     .img_sec_tree {
       width: 200px;
       height: 400px;
       object-fit: cover;
       transition: 0.2s;
+      &:hover {
+        transform: scale(1.1);
+        }
     }
-    .img_sec_tree:hover {
-      transform: scale(1.1);
-    }
+
     // naming
     .img_sec_four {
       width: 200px;
       height: 400px;
       object-fit: cover;
       transition: 0.2s;
-    }
-    .img_sec_four:hover {
-      transform: scale(1.1);
+      &:hover {
+        transform: scale(1.1);
+        }
     }
   }
 }
@@ -124,13 +120,10 @@
     flex-direction: column;
 
     .h_one {
-      // position: absolute;
       width: 289px;
       height: 27px;
       top: 550px;
 
-      font-family: Montserrat;
-      font-style: normal;
       font-weight: bold;
       font-size: 22px;
       line-height: 27px;
@@ -140,14 +133,12 @@
     }
 
     .img_sec_two {
-      // position: absolute;
       margin-top: 110px;
       width: 200px;
       height: 220px;
     }
 
     .img_sec_tree {
-      // position: absolute;
       width: 200px;
       height: 220px;
       left: 0px;
@@ -155,7 +146,6 @@
     }
 
     .img_sec_four {
-      // position: absolute;
       width: 200px;
       height: 220px;
       left: 0px;

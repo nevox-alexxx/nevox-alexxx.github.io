@@ -3,7 +3,7 @@
   background-position: center;
   height: 700px;
   background-repeat: no-repeat;
-  background-image: url(./img/header/corusant.jpg);
+  background-image: url("../img/header/corusant.jpg");
 }
 
 .logo {
@@ -35,15 +35,14 @@
   border: 2px solid #d4d4d4;
   box-sizing: border-box;
   border-radius: 40px;
+  transition: 0.2s;
 }
 .border .signUp {
   text-decoration: none;
   color: #d4d4d4;
   font-size: 17px;
   line-height: 17px;
-  transition: 0.2s;
 }
-
 .border:hover {
   scale: 1.2;
 }
@@ -63,7 +62,6 @@
   color: #d4d4d4;
   transition: 0.2s;
 }
-
 .log_in_b:hover {
   scale: 1.2;
 }
@@ -87,7 +85,6 @@
   justify-content: center;
   align-items: center;
   top: 230px;
-  font-family: Roboto;
   font-size: 24px;
   font-weight: bold;
   line-height: 24px;
@@ -128,7 +125,6 @@
   cursor: pointer;
   transition: 1.7s;
 }
-
 .butt_red:hover {
   box-shadow: 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee, 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee;
 }
@@ -139,7 +135,7 @@
     background-position: center;
     height: 700px;
     background-repeat: no-repeat;
-    background-image: url(./img/header/corusant.jpg);
+    background-image: url("../img/header/corusant.jpg");
   }
   .logo {
     position: relative;
@@ -163,7 +159,6 @@
     line-height: 20px;
     margin: 10px auto;
     justify-content: center;
-    font-family: Montserrat;
     font-size: 17px;
     line-height: 17px;
     text-decoration: none;
@@ -185,7 +180,6 @@
   .border .signUp {
     text-decoration: none;
     color: #d4d4d4;
-    font-family: Montserrat;
     font-size: 17px;
     line-height: 17px;
   }
@@ -194,8 +188,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 52px;
     top: 170px;
@@ -210,7 +202,6 @@
     align-items: center;
     top: 230px;
     font-family: Roboto;
-    font-style: normal;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
@@ -224,7 +215,6 @@
     left: 50%;
     top: 500px;
     transform: translate(-50%, -50%);
-    background: #e9e1e1;
     border-radius: 40px;
     transition: 0.2s;
   }
@@ -232,12 +222,10 @@
     position: absolute;
     left: 23px;
     top: 10px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #d4d4d4;
     transition: 0.2s;
     text-decoration: none;
   }
@@ -251,19 +239,18 @@
     background-position: center;
     height: 540px;
     background-repeat: no-repeat;
-    background-image: url(./img/header/corusant.jpg);
+    background-image: url("../img/header/corusant.jpg");
   }
   .logo {
     position: relative;
     left: 5px;
     top: 60px;
-    font-family: Montserrat;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
     display: inline-block;
     align-items: flex-start;
-    color: #ffffff;
+    color: #d4d4d4;
   }
   .log_in_b {
     display: inline;
@@ -274,10 +261,8 @@
     line-height: 20px;
     margin: 10px auto;
     justify-content: center;
-    font-family: Montserrat;
     font-size: 17px;
     line-height: 17px;
-    /* identical to box height */
     text-decoration: none;
     color: #d4d4d4;
   }
@@ -297,7 +282,6 @@
   .border .signUp {
     text-decoration: none;
     color: #d4d4d4;
-    font-family: Montserrat;
     font-size: 17px;
     line-height: 17px;
   }
@@ -306,8 +290,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 42px;
     top: 130px;
@@ -321,8 +303,6 @@
     justify-content: center;
     align-items: center;
     top: 200px;
-    font-family: Roboto;
-    background-color: #1f1f1f;
     font-style: normal;
     font-size: 24px;
     font-weight: bold;
@@ -337,7 +317,6 @@
     left: 50%;
     top: 450px;
     transform: translate(-50%, -50%);
-    background: #e9e1e1;
     border-radius: 40px;
     transition: 0.2s;
   }
@@ -345,12 +324,10 @@
     position: absolute;
     left: 23px;
     top: 10px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #d4d4d4;
     transition: 0.2s;
     text-decoration: none;
   }

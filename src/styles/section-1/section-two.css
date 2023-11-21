@@ -54,12 +54,9 @@
     width: 289px;
     height: 27px;
     top: 730px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
-    /* identical to box height */
     display: flex;
     align-items: flex-end;
     text-align: center;
@@ -110,8 +107,6 @@
     width: 289px;
     height: 27px;
     top: 550px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;

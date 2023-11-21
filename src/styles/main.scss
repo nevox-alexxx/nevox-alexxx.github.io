@@ -6,13 +6,12 @@
 @import './section-3/section-for.scss';
 @import './footer/footer.scss';
 
-
 html {
   scroll-behavior: smooth;
   font-family: Montserrat;
+
 }
 
-// правила для загальних тегів або класів прийнято виносити на початок файлів і йти далі вниз орієнтуючись на порядок появлення класів у html файлі
 body {
   background-color: #cccccc;
 }

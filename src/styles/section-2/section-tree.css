@@ -113,6 +113,10 @@
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 40px;
+  transition: 0.3s;
+}
+.section_tree .withe_but:hover {
+  transform: scale(1.1);
 }
 .section_tree .withe_but .small_textt {
   position: absolute;
@@ -125,10 +129,6 @@
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  transition: 0.2s;
-}
-.section_tree .withe_but .small_textt:hover {
-  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1160px) {
@@ -145,8 +145,6 @@
     height: 27px;
     left: 38px;
     top: -20px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
@@ -170,7 +168,6 @@
     position: absolute;
     left: 70px;
     top: 30px;
-    font-family: Montserrat;
     color: #000000;
   }
   .section_tree .img_sec_five {
@@ -186,7 +183,6 @@
     position: absolute;
     left: 330px;
     top: 30px;
-    font-family: Montserrat;
   }
   .section_tree .img_sec_six {
     position: absolute;
@@ -199,7 +195,6 @@
     position: absolute;
     left: 60px;
     top: 320px;
-    font-family: Montserrat;
   }
   .section_tree .img_sec_seven {
     position: absolute;
@@ -212,7 +207,6 @@
     position: absolute;
     left: 320px;
     top: 320px;
-    font-family: Montserrat;
   }
   .section_tree .withe_but {
     position: absolute;
@@ -231,8 +225,6 @@
     height: 17px;
     left: 21px;
     top: 9px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
@@ -255,8 +247,6 @@
     height: 54px;
     left: 10px;
     top: 0px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
@@ -321,12 +311,9 @@
     height: 17px;
     left: 70px;
     top: 10px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
     display: flex;
     align-items: flex-end;
     color: #000000;
