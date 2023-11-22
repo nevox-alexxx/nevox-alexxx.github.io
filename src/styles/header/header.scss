@@ -1,6 +1,6 @@
 $main-color :#d4d4d4;
 
-.crop {
+.header-container {
   background-size: cover;
   background-position: center;
   height: 700px;
@@ -8,37 +8,40 @@ $main-color :#d4d4d4;
   background-image: url(../img/header/corusant.jpg);
 }
 
+.top-bar{
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 60px 90px 0;
+
+  align-items: center;
+}
+
 .logo {
-  position: relative;
-  left: 110px;
-  top: 58px;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  display: inline-block;
-  align-items: flex-start;
   color: $main-color;
   transition: 0.2s;
 
-  // використовуй нестінг, де це можливо - передивись і виправи це у всьому коді
   &:hover {
-    scale: 1.2;
+    transform: scale(1.2);
     cursor: pointer;
   }
 }
 
-.border {
-  display: inline;
-  position: absolute;
-  top: 46px;
-  right: 125px;
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.border-signUp {
   padding: 5px;
   line-height: 20px;
-  margin: 10px auto;
   justify-content: center;
 
   border: 2px solid $main-color;
-  box-sizing: border-box;
   border-radius: 40px;
   transition: 0.2s;
 
@@ -46,40 +49,25 @@ $main-color :#d4d4d4;
     text-decoration: none;
     color: $main-color;
     font-size: 17px;
-    line-height: 17px;
-    
   }
   &:hover {
-  scale: 1.2;
+    transform: scale(1.2);
   }
 }
 
-// назви змінних і класів мають про щось казати під час прочитання самої назви,
-// тому треба оновити всюди назви на більш змістовні і універсальні
-// (якщо це червона кнопка, red-button буде погана назва, бо колір може помінятися)
-.log_in_b {
-  display: inline;
-  position: absolute;
-  top: 48px;
-  right: 215px;
-  padding: 5px;
-  line-height: 20px;
-  margin: 10px auto;
-  justify-content: center;
-
+.logIn_button {
+  padding: 10px;
   font-size: 17px;
-  line-height: 17px;
   text-decoration: none;
-
   color: $main-color;
   transition: 0.2s;
+
   &:hover {
-    scale: 1.2;
+    transform: scale(1.2);
   }
 }
 
-
-.tittle {
+.main-tittle {
   position: relative;
   display: flex;
   justify-content: center;
@@ -88,19 +76,19 @@ $main-color :#d4d4d4;
   font-weight: bold;
   font-size: 52px;
 
-  top: 170px;
+  top: 7rem;
   line-height: 70px;
   text-align: center;
 
   color: $main-color;
 }
 
-.smal_tittle {
+.small_tittle {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 230px;
+  top: 11rem;
 
   font-size: 24px;
   font-weight: bold;
@@ -110,97 +98,81 @@ $main-color :#d4d4d4;
   color: $main-color;
 }
 
-// naming
-.red_butt {
-  position: absolute;
-  left: 50%;
-  top: 500px;
-  transform: translate(-50%, -50%);
+.find-button-standpoint {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 230px;
+  align-items: center;
 
-  .txt {
-    position: absolute;
-    left: 23px;
-    top: 8px;
+  .find-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid $main-color;
+    border-radius: 40px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
 
+    transition: 1.3s;
+    &:hover {
+      box-shadow: 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee,
+        0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee;
+    }
+  }
+
+  .find-button-txt {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     color: $main-color;
     transition: 0.2s;
     text-decoration: none;
+
     &:hover {
-      scale: 1.1;
+      transform: scale(1.1);
     }
   }
 }
 
-// naming
-.butt_red {
-  position: relative;
-  text-align: center;
-  width: 225px;
-  height: 40px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 3px solid $main-color;
-  border-radius: 40px;
-  cursor: pointer;
-  // transition варто вказати для конкретної властивості, якій ти хочеш його задати,
-  // бо якщо задати його для всіх властивостей це зайве перевантаження стилів
-  transition: 1.7s;
-  &:hover {
-    box-shadow: 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee,
-      0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee;
-  }
-}
-
 @media screen and (max-width: 1160px) {
-  // я так розумію це має бути якесь як обрізане фото? краще назвати для чого саме цей клас, а не що він робить
-  .crop {
+  
+  .header-container {
     background-size: cover;
     background-position: center;
     height: 700px;
     background-repeat: no-repeat;
   }
 
-  .logo {
-    position: relative;
-    justify-content: start;
-    top: 58px;
-    margin-left: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 24px;
-    display: inline-block;
-    align-items: flex-start;
-    color: $main-color;
+  .top-bar{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 90px 0;
+  
+    align-items: center;
   }
-  // naming
-  .log_in_b {
-    display: inline;
-    position: absolute;
-    top: 48px;
-    right: 215px;
-    padding: 5px;
-    line-height: 20px;
-    margin: 10px auto;
-    justify-content: center;
 
-    font-size: 17px;
-    line-height: 17px;
-    text-decoration: none;
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
     color: $main-color;
   }
-  // який саме бордер (або для чого)?
-  .border {
-    display: inline;
-    position: absolute;
-    top: 46px;
-    right: 125px;
+
+  .buttons-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .border-signUp {
     padding: 5px;
     line-height: 20px;
-    margin: 10px auto;
     justify-content: center;
 
     border: 2px solid $main-color;
@@ -211,11 +183,19 @@ $main-color :#d4d4d4;
       text-decoration: none;
       color: $main-color;
       font-size: 17px;
-      line-height: 17px;
     }
   }
-  // який саме title або для чого?
-  .tittle {
+
+  .logIn_button {
+    padding: 10px;
+    line-height: 20px;
+
+    font-size: 17px;
+    text-decoration: none;
+    color: $main-color;
+  }
+
+  .main-tittle {
     position: relative;
     display: flex;
     justify-content: center;
@@ -224,7 +204,7 @@ $main-color :#d4d4d4;
     font-weight: bold;
     font-size: 52px;
 
-    top: 170px;
+    top: 7rem;
     line-height: 70px;
     text-align: center;
 
@@ -236,9 +216,8 @@ $main-color :#d4d4d4;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 230px;
+    top: 11rem;
 
-    font-family: Roboto;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
@@ -246,40 +225,39 @@ $main-color :#d4d4d4;
 
     color: $main-color;
   }
-  // naming
-  .red_butt {
-    position: absolute;
-    width: 225px;
-    height: 40px;
-    left: 50%;
-    top: 500px;
-    transform: translate(-50%, -50%);
 
-    border-radius: 40px;
-    // transition issue
-    transition: 0.2s;
-    // naming
-    .txt {
-      position: absolute;
-      left: 23px;
-      top: 10px;
+  .find-button-standpoint {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+    align-items: center;
 
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 17px;
-      color: $main-color;
+    .find-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 225px;
+      height: 40px;
       transition: 0.2s;
-      text-decoration: none;
+
     }
-    // nesting
-    .txt:hover {
-      scale: 1.1;
+    .find-button-txt {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: $main-color;
+        transition: 0.2s;
+        text-decoration: none;
+        &:hover {
+          transform: scale(1.1);
+        }
     }
   }
 }
 
 @media screen and (max-width: 720px) {
-  .crop {
+  .header-container {
     background-size: cover;
     background-position: center;
 
@@ -287,59 +265,64 @@ $main-color :#d4d4d4;
     background-repeat: no-repeat;
   }
 
-  .logo {
-    position: relative;
-    left: 5px;
-    top: 60px;
+  .top-bar{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 90px 0;
+  
+    align-items: center;
+  }
 
+  .logo {
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    display: inline-block;
-    align-items: flex-start;
-
     color: $main-color;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
 
-  .log_in_b {
-    display: inline;
-    position: absolute;
-    top: 50px;
-    right: 115px;
+  .buttons-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .border-signUp {
     padding: 5px;
     line-height: 20px;
-    margin: 10px auto;
     justify-content: center;
 
+    border: 2px solid $main-color;
+    border-radius: 40px;
+
+    .signUp {
+      text-decoration: none;
+      color: $main-color;
+      font-size: 17px;
+    }
+  }
+
+  .logIn_button {
+    padding: 10px;
     font-size: 17px;
     line-height: 17px;
     text-decoration: none;
 
     color: $main-color;
-  }
+    transition: 0.2s;
 
-  .border {
-    display: inline;
-    position: absolute;
-    top: 46px;
-    right: 35px;
-    padding: 5px;
-    line-height: 20px;
-    margin: 10px auto;
-    justify-content: center;
-
-    border: 2px solid $main-color;
-    box-sizing: border-box;
-    border-radius: 40px;
-    .signUp {
-      text-decoration: none;
-      color: $main-color;
-      font-size: 17px;
-      line-height: 17px;
+    &:hover {
+    transform: scale(1.2);
     }
   }
 
-  .tittle {
+  .main-tittle {
     position: relative;
     display: flex;
     justify-content: center;
@@ -348,21 +331,20 @@ $main-color :#d4d4d4;
     font-weight: bold;
     font-size: 42px;
 
-    top: 130px;
+    top: 4rem;
     line-height: 70px;
     text-align: center;
 
     color: $main-color;
   }
 
-  .smal_tittle {
+  .small_tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 200px;
+    top: 6rem;
 
-    font-style: normal;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
@@ -371,31 +353,33 @@ $main-color :#d4d4d4;
     color: $main-color;
   }
 
-  .red_butt {
-    position: absolute;
-    width: 225px;
-    height: 40px;
-    left: 50%;
-    top: 450px;
-    transform: translate(-50%, -50%);
+  .find-button-standpoint {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    align-items: center;
 
-    border-radius: 40px;
-    transition: 0.2s;
+    .find-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 225px;
+      height: 40px;
+      transition: 0.2s;
+    }
 
-    .txt {
-      position: absolute;
-      left: 23px;
-      top: 10px;
-
+    .find-button-txt {
       font-weight: bold;
       font-size: 14px;
       line-height: 17px;
       color: $main-color;
       transition: 0.2s;
       text-decoration: none;
-    }
-    .txt:hover {
-      scale: 1.1;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

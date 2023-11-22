@@ -1,4 +1,4 @@
-.crop {
+.header-container {
   background-size: cover;
   background-position: center;
   height: 700px;
@@ -6,85 +6,79 @@
   background-image: url(../img/header/corusant.jpg);
 }
 
+.top-bar {
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 60px 90px 0;
+  align-items: center;
+}
+
 .logo {
-  position: relative;
-  left: 110px;
-  top: 58px;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  display: inline-block;
-  align-items: flex-start;
   color: #d4d4d4;
   transition: 0.2s;
 }
 .logo:hover {
-  scale: 1.2;
+  transform: scale(1.2);
   cursor: pointer;
 }
 
-.border {
-  display: inline;
-  position: absolute;
-  top: 46px;
-  right: 125px;
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.border-signUp {
   padding: 5px;
   line-height: 20px;
-  margin: 10px auto;
   justify-content: center;
   border: 2px solid #d4d4d4;
-  box-sizing: border-box;
   border-radius: 40px;
   transition: 0.2s;
 }
-.border .signUp {
+.border-signUp .signUp {
   text-decoration: none;
   color: #d4d4d4;
   font-size: 17px;
-  line-height: 17px;
 }
-.border:hover {
-  scale: 1.2;
+.border-signUp:hover {
+  transform: scale(1.2);
 }
 
-.log_in_b {
-  display: inline;
-  position: absolute;
-  top: 48px;
-  right: 215px;
-  padding: 5px;
-  line-height: 20px;
-  margin: 10px auto;
-  justify-content: center;
+.logIn_button {
+  padding: 10px;
   font-size: 17px;
-  line-height: 17px;
   text-decoration: none;
   color: #d4d4d4;
   transition: 0.2s;
 }
-.log_in_b:hover {
-  scale: 1.2;
+.logIn_button:hover {
+  transform: scale(1.2);
 }
 
-.tittle {
+.main-tittle {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 52px;
-  top: 170px;
+  top: 7rem;
   line-height: 70px;
   text-align: center;
   color: #d4d4d4;
 }
 
-.smal_tittle {
+.small_tittle {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 230px;
+  top: 11rem;
   font-size: 24px;
   font-weight: bold;
   line-height: 24px;
@@ -92,30 +86,17 @@
   color: #d4d4d4;
 }
 
-.red_butt {
-  position: absolute;
-  left: 50%;
-  top: 500px;
-  transform: translate(-50%, -50%);
-}
-.red_butt .txt {
-  position: absolute;
-  left: 23px;
-  top: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #d4d4d4;
-  transition: 0.2s;
-  text-decoration: none;
-}
-.red_butt .txt:hover {
-  scale: 1.1;
-}
-
-.butt_red {
+.find-button-standpoint {
+  display: flex;
+  justify-content: center;
   position: relative;
-  text-align: center;
+  top: 230px;
+  align-items: center;
+}
+.find-button-standpoint .find-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 225px;
   height: 40px;
   font-size: 16px;
@@ -123,73 +104,78 @@
   border: 3px solid #d4d4d4;
   border-radius: 40px;
   cursor: pointer;
-  transition: 1.7s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: 1.3s;
 }
-.butt_red:hover {
+.find-button-standpoint .find-button:hover {
   box-shadow: 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee, 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee;
+}
+.find-button-standpoint .find-button-txt {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #d4d4d4;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.find-button-standpoint .find-button-txt:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1160px) {
-  .crop {
+  .header-container {
     background-size: cover;
     background-position: center;
     height: 700px;
     background-repeat: no-repeat;
   }
+  .top-bar {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 90px 0;
+    align-items: center;
+  }
   .logo {
-    position: relative;
-    justify-content: start;
-    top: 58px;
-    margin-left: 20px;
-    font-style: normal;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 24px;
-    display: inline-block;
-    align-items: flex-start;
     color: #d4d4d4;
   }
-  .log_in_b {
-    display: inline;
-    position: absolute;
-    top: 48px;
-    right: 215px;
-    padding: 5px;
-    line-height: 20px;
-    margin: 10px auto;
-    justify-content: center;
-    font-size: 17px;
-    line-height: 17px;
-    text-decoration: none;
-    color: #d4d4d4;
+  .buttons-container {
+    display: flex;
+    align-items: center;
   }
-  .border {
-    display: inline;
-    position: absolute;
-    top: 46px;
-    right: 125px;
+  .border-signUp {
     padding: 5px;
     line-height: 20px;
-    margin: 10px auto;
     justify-content: center;
     border: 2px solid #d4d4d4;
     box-sizing: border-box;
     border-radius: 40px;
   }
-  .border .signUp {
+  .border-signUp .signUp {
     text-decoration: none;
     color: #d4d4d4;
     font-size: 17px;
-    line-height: 17px;
   }
-  .tittle {
+  .logIn_button {
+    padding: 10px;
+    line-height: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #d4d4d4;
+  }
+  .main-tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 52px;
-    top: 170px;
+    top: 7rem;
     line-height: 70px;
     text-align: center;
     color: #d4d4d4;
@@ -199,28 +185,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 230px;
-    font-family: Roboto;
+    top: 11rem;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
     text-align: center;
     color: #d4d4d4;
   }
-  .red_butt {
-    position: absolute;
+  .find-button-standpoint {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+    align-items: center;
+  }
+  .find-button-standpoint .find-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 225px;
     height: 40px;
-    left: 50%;
-    top: 500px;
-    transform: translate(-50%, -50%);
-    border-radius: 40px;
     transition: 0.2s;
   }
-  .red_butt .txt {
-    position: absolute;
-    left: 23px;
-    top: 10px;
+  .find-button-standpoint .find-button-txt {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
@@ -228,100 +215,103 @@
     transition: 0.2s;
     text-decoration: none;
   }
-  .red_butt .txt:hover {
-    scale: 1.1;
+  .find-button-standpoint .find-button-txt:hover {
+    transform: scale(1.1);
   }
 }
 @media screen and (max-width: 720px) {
-  .crop {
+  .header-container {
     background-size: cover;
     background-position: center;
     height: 540px;
     background-repeat: no-repeat;
   }
+  .top-bar {
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 90px 0;
+    align-items: center;
+  }
   .logo {
-    position: relative;
-    left: 5px;
-    top: 60px;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    display: inline-block;
-    align-items: flex-start;
     color: #d4d4d4;
+    transition: 0.2s;
   }
-  .log_in_b {
-    display: inline;
-    position: absolute;
-    top: 50px;
-    right: 115px;
+  .logo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .buttons-container {
+    display: flex;
+    align-items: center;
+  }
+  .border-signUp {
     padding: 5px;
     line-height: 20px;
-    margin: 10px auto;
-    justify-content: center;
-    font-size: 17px;
-    line-height: 17px;
-    text-decoration: none;
-    color: #d4d4d4;
-  }
-  .border {
-    display: inline;
-    position: absolute;
-    top: 46px;
-    right: 35px;
-    padding: 5px;
-    line-height: 20px;
-    margin: 10px auto;
     justify-content: center;
     border: 2px solid #d4d4d4;
-    box-sizing: border-box;
     border-radius: 40px;
   }
-  .border .signUp {
+  .border-signUp .signUp {
     text-decoration: none;
     color: #d4d4d4;
     font-size: 17px;
-    line-height: 17px;
   }
-  .tittle {
+  .logIn_button {
+    padding: 10px;
+    font-size: 17px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #d4d4d4;
+    transition: 0.2s;
+  }
+  .logIn_button:hover {
+    transform: scale(1.2);
+  }
+  .main-tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 42px;
-    top: 130px;
+    top: 4rem;
     line-height: 70px;
     text-align: center;
     color: #d4d4d4;
   }
-  .smal_tittle {
+  .small_tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 200px;
-    font-style: normal;
+    top: 6rem;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
     text-align: center;
     color: #d4d4d4;
   }
-  .red_butt {
-    position: absolute;
+  .find-button-standpoint {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    align-items: center;
+  }
+  .find-button-standpoint .find-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 225px;
     height: 40px;
-    left: 50%;
-    top: 450px;
-    transform: translate(-50%, -50%);
-    border-radius: 40px;
     transition: 0.2s;
   }
-  .red_butt .txt {
-    position: absolute;
-    left: 23px;
-    top: 10px;
+  .find-button-standpoint .find-button-txt {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
@@ -329,7 +319,7 @@
     transition: 0.2s;
     text-decoration: none;
   }
-  .red_butt .txt:hover {
-    scale: 1.1;
+  .find-button-standpoint .find-button-txt:hover {
+    transform: scale(1.1);
   }
 }/*# sourceMappingURL=header.css.map */
