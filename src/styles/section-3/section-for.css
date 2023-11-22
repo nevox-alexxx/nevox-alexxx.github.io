@@ -172,7 +172,6 @@
     top: 61px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/alies.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -183,7 +182,6 @@
     top: 61px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/sea_star.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -192,7 +190,6 @@
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/red-suit.webp");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -201,7 +198,6 @@
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/new_images/mike_2.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -210,7 +206,6 @@
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/battle-field.jpg");
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0px;
@@ -223,7 +218,6 @@
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/mando.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -232,7 +226,6 @@
     height: 310px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/tatooine.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -264,7 +257,6 @@
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/alies.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -282,7 +274,6 @@
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/sea_star.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -291,7 +282,6 @@
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/red-suit.webp");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -300,7 +290,6 @@
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/new_images/mike_2.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -309,7 +298,6 @@
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/battle-field.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -318,7 +306,6 @@
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/mando.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }
@@ -327,7 +314,6 @@
     height: 120px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/section_tree/tatooine.jpg");
     mix-blend-mode: normal;
     border-radius: 4px;
   }

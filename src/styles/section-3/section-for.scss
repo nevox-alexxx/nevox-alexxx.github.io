@@ -44,7 +44,6 @@ $transition-scale: 1.1;
 
     mix-blend-mode: normal;
     border-radius: 4px;
-    // transition issue
     transition: 0.2s;
     &:hover {
       scale: $transition-scale;
@@ -217,7 +216,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($alies-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -231,7 +229,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($sea-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -243,7 +240,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($new-suit);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -254,7 +250,6 @@ $transition-scale: 1.1;
       height: 310px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($bloody-helmet);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -265,7 +260,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($battle-field);
       object-fit: cover;
       object-position: 0px;
 
@@ -279,7 +273,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($mando-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -291,7 +284,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($tatooine-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -330,7 +322,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($alies-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -354,7 +345,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($sea-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -366,7 +356,6 @@ $transition-scale: 1.1;
 
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($new-suit);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -377,7 +366,6 @@ $transition-scale: 1.1;
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($bloody-helmet);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -388,7 +376,6 @@ $transition-scale: 1.1;
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($battle-field);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -399,7 +386,6 @@ $transition-scale: 1.1;
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($mando-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;
@@ -410,7 +396,6 @@ $transition-scale: 1.1;
       height: 120px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url($tatooine-img);
 
       mix-blend-mode: normal;
       border-radius: 4px;

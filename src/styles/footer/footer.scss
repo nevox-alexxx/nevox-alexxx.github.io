@@ -76,17 +76,23 @@
     height: 40px;
     left: 309px;
     top: 0px;
-    background: #ffffff8a;
+    background: #b1b1b1;
     border-radius: 40px;
     transition: 0.2s;
-  }
-  // nesting
-  .butt:hover {
+    &:hover {
     scale: 1.07;
+    }
   }
+
   // клас називається decor, але в ньому ти відміняєш декорацію :)
   .decor {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
     text-decoration: none;
+    &:visited {
+      color: rgb(0, 0, 0);
+    }    
   }
 }
 
@@ -346,11 +352,11 @@
       height: 40px;
       left: 309px;
       top: 0px;
-      background: #ffffff8a;
+      background: #b1b1b1;
       border-radius: 40px;
-    }
-    .butt:hover {
-      scale: 1.07;
+      &:hover {
+        scale: 1.07;
+      }
     }
   }
 
@@ -597,7 +603,7 @@
       left: -8px;
       top: 50px;
 
-      background: #ffffff8a;
+      background: #b1b1b1;
       border-radius: 40px;
     }
   }
@@ -639,7 +645,6 @@
       left: 125px;
       top: 54px;
 
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;

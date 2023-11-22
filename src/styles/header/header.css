@@ -3,7 +3,7 @@
   background-position: center;
   height: 700px;
   background-repeat: no-repeat;
-  background-image: url("../img/header/corusant.jpg");
+  background-image: url(../img/header/corusant.jpg);
 }
 
 .logo {
@@ -135,7 +135,6 @@
     background-position: center;
     height: 700px;
     background-repeat: no-repeat;
-    background-image: url("../img/header/corusant.jpg");
   }
   .logo {
     position: relative;
@@ -239,7 +238,6 @@
     background-position: center;
     height: 540px;
     background-repeat: no-repeat;
-    background-image: url("../img/header/corusant.jpg");
   }
   .logo {
     position: relative;
