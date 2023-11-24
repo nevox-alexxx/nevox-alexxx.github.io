@@ -141,7 +141,7 @@ textarea {
   align-items: center;
 }
 
-.border-signUp {
+.border-sign-up {
   padding: 5px;
   line-height: 20px;
   justify-content: center;
@@ -149,23 +149,23 @@ textarea {
   border-radius: 40px;
   transition: 0.2s;
 }
-.border-signUp .signUp {
+.border-sign-up .sign-up {
   text-decoration: none;
   color: #d4d4d4;
   font-size: 17px;
 }
-.border-signUp:hover {
+.border-sign-up:hover {
   transform: scale(1.2);
 }
 
-.logIn_button {
+.log-in-button {
   padding: 10px;
   font-size: 17px;
   text-decoration: none;
   color: #d4d4d4;
   transition: 0.2s;
 }
-.logIn_button:hover {
+.log-in-button:hover {
   transform: scale(1.2);
 }
 
@@ -176,18 +176,18 @@ textarea {
   align-items: center;
   font-weight: bold;
   font-size: 52px;
-  top: 7rem;
+  padding-top: 120px;
   line-height: 70px;
   text-align: center;
   color: #d4d4d4;
 }
 
-.small_tittle {
+.small-tittle {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 11rem;
+  padding-top: 40px;
   font-size: 24px;
   font-weight: bold;
   line-height: 24px;
@@ -199,7 +199,7 @@ textarea {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 230px;
+  padding-top: 40px;
   align-items: center;
 }
 .find-button-standpoint .find-button {
@@ -257,7 +257,7 @@ textarea {
     display: flex;
     align-items: center;
   }
-  .border-signUp {
+  .border-sign-up {
     padding: 5px;
     line-height: 20px;
     justify-content: center;
@@ -265,12 +265,12 @@ textarea {
     box-sizing: border-box;
     border-radius: 40px;
   }
-  .border-signUp .signUp {
+  .border-sign-up .sign-up {
     text-decoration: none;
     color: #d4d4d4;
     font-size: 17px;
   }
-  .logIn_button {
+  .log-in-button {
     padding: 10px;
     line-height: 20px;
     font-size: 17px;
@@ -284,17 +284,17 @@ textarea {
     align-items: center;
     font-weight: bold;
     font-size: 52px;
-    top: 7rem;
+    padding-top: 120px;
     line-height: 70px;
     text-align: center;
     color: #d4d4d4;
   }
-  .small_tittle {
+  .small-tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 11rem;
+    padding-top: 40px;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
@@ -305,7 +305,7 @@ textarea {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 230px;
+    padding-top: 40px;
     align-items: center;
   }
   .find-button-standpoint .find-button {
@@ -358,19 +358,19 @@ textarea {
     display: flex;
     align-items: center;
   }
-  .border-signUp {
+  .border-sign-up {
     padding: 5px;
     line-height: 20px;
     justify-content: center;
     border: 2px solid #d4d4d4;
     border-radius: 40px;
   }
-  .border-signUp .signUp {
+  .border-sign-up .sign-up {
     text-decoration: none;
     color: #d4d4d4;
     font-size: 17px;
   }
-  .logIn_button {
+  .log-in-button {
     padding: 10px;
     font-size: 17px;
     line-height: 17px;
@@ -378,7 +378,7 @@ textarea {
     color: #d4d4d4;
     transition: 0.2s;
   }
-  .logIn_button:hover {
+  .log-in-button:hover {
     transform: scale(1.2);
   }
   .main-tittle {
@@ -388,17 +388,17 @@ textarea {
     align-items: center;
     font-weight: bold;
     font-size: 42px;
-    top: 4rem;
+    padding-top: 70px;
     line-height: 70px;
     text-align: center;
     color: #d4d4d4;
   }
-  .small_tittle {
+  .small-tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 6rem;
+    padding-top: 30px;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
@@ -409,7 +409,7 @@ textarea {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 10rem;
+    padding-top: 50px;
     align-items: center;
   }
   .find-button-standpoint .find-button {

@@ -36,7 +36,7 @@ $main-color :#d4d4d4;
   align-items: center;
 }
 
-.border-signUp {
+.border-sign-up {
   padding: 5px;
   line-height: 20px;
   justify-content: center;
@@ -45,7 +45,7 @@ $main-color :#d4d4d4;
   border-radius: 40px;
   transition: 0.2s;
 
-  .signUp {
+  .sign-up {
     text-decoration: none;
     color: $main-color;
     font-size: 17px;
@@ -55,7 +55,7 @@ $main-color :#d4d4d4;
   }
 }
 
-.logIn_button {
+.log-in-button {
   padding: 10px;
   font-size: 17px;
   text-decoration: none;
@@ -76,19 +76,19 @@ $main-color :#d4d4d4;
   font-weight: bold;
   font-size: 52px;
 
-  top: 7rem;
+  padding-top: 120px;
   line-height: 70px;
   text-align: center;
 
   color: $main-color;
 }
 
-.small_tittle {
+.small-tittle {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 11rem;
+  padding-top: 40px;
 
   font-size: 24px;
   font-weight: bold;
@@ -102,7 +102,7 @@ $main-color :#d4d4d4;
   display: flex;
   justify-content: center;
   position: relative;
-  top: 230px;
+  padding-top: 40px;
   align-items: center;
 
   .find-button {
@@ -170,7 +170,7 @@ $main-color :#d4d4d4;
     align-items: center;
   }
 
-  .border-signUp {
+  .border-sign-up {
     padding: 5px;
     line-height: 20px;
     justify-content: center;
@@ -179,14 +179,14 @@ $main-color :#d4d4d4;
     box-sizing: border-box;
     border-radius: 40px;
 
-    .signUp {
+    .sign-up {
       text-decoration: none;
       color: $main-color;
       font-size: 17px;
     }
   }
 
-  .logIn_button {
+  .log-in-button {
     padding: 10px;
     line-height: 20px;
 
@@ -204,19 +204,19 @@ $main-color :#d4d4d4;
     font-weight: bold;
     font-size: 52px;
 
-    top: 7rem;
+    padding-top: 120px;
     line-height: 70px;
     text-align: center;
 
     color: $main-color;
   }
 
-  .small_tittle {
+  .small-tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 11rem;
+    padding-top: 40px;
 
     font-size: 24px;
     font-weight: bold;
@@ -230,7 +230,7 @@ $main-color :#d4d4d4;
     display: flex;
     justify-content: center;
     position: relative;
-    top: 230px;
+    padding-top: 40px;
     align-items: center;
 
     .find-button {
@@ -293,7 +293,7 @@ $main-color :#d4d4d4;
     align-items: center;
   }
 
-  .border-signUp {
+  .border-sign-up {
     padding: 5px;
     line-height: 20px;
     justify-content: center;
@@ -301,14 +301,14 @@ $main-color :#d4d4d4;
     border: 2px solid $main-color;
     border-radius: 40px;
 
-    .signUp {
+    .sign-up {
       text-decoration: none;
       color: $main-color;
       font-size: 17px;
     }
   }
 
-  .logIn_button {
+  .log-in-button {
     padding: 10px;
     font-size: 17px;
     line-height: 17px;
@@ -331,19 +331,19 @@ $main-color :#d4d4d4;
     font-weight: bold;
     font-size: 42px;
 
-    top: 4rem;
+    padding-top: 70px;
     line-height: 70px;
     text-align: center;
 
     color: $main-color;
   }
 
-  .small_tittle {
+  .small-tittle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 6rem;
+    padding-top: 30px;
 
     font-size: 24px;
     font-weight: bold;
@@ -357,7 +357,7 @@ $main-color :#d4d4d4;
     display: flex;
     justify-content: center;
     position: relative;
-    top: 10rem;
+    padding-top: 50px;
     align-items: center;
 
     .find-button {
