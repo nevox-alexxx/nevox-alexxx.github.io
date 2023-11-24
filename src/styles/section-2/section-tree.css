@@ -1,321 +1,228 @@
-.section_tree {
-  position: absolute;
-  width: 941px;
-  height: 361px;
-  left: calc(50% - 470px);
-  top: 1351px;
-}
-.section_tree .h_two {
-  position: absolute;
-  width: 491px;
-  height: 32px;
-  left: 226px;
-  top: -6px;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
+.second-section {
   display: flex;
-  align-items: flex-end;
-  text-align: center;
+  justify-content: center;
+  height: 400px;
+  flex-wrap: wrap;
+}
+.second-section .headline-second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+.second-section .headline-second-section .second-headline {
+  font-weight: bold;
+  font-size: 100%;
+  line-height: 32px;
   color: #444444;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.section_tree .img_sec_ {
-  position: absolute;
+.second-section .stormtrooper-list {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0px 15% 0px 15%;
+  margin: 0px;
+  padding-top: 25px;
+}
+.second-section .stormtrooper-list .img-stormtrooper {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.second-section .stormtrooper-list .img-stormtrooper .stormtrooper-name {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+}
+.second-section .img-second-section {
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center -50px;
-     object-position: center -50px;
   border-radius: 50%;
-  left: 30px;
-  top: 61px;
   transition: 0.2s;
 }
-.section_tree .img_sec_:hover {
+.second-section .img-second-section:hover {
   border-radius: 20%;
 }
-.section_tree .name1 {
-  position: absolute;
-  left: 60px;
-  top: 220px;
-}
-.section_tree .img_sec_five {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 50%;
-  left: 270px;
-  top: 61px;
-  transition: 0.2s;
-}
-.section_tree .img_sec_five:hover {
-  border-radius: 20%;
-}
-.section_tree .name2 {
-  position: absolute;
-  left: 300px;
-  top: 220px;
-}
-.section_tree .img_sec_six {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 50%;
-  left: 510px;
-  top: 61px;
-  transition: 0.2s;
-}
-.section_tree .img_sec_six:hover {
-  border-radius: 20%;
-}
-.section_tree .name3 {
-  position: absolute;
-  left: 535px;
-  top: 220px;
-}
-.section_tree .img_sec_seven {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 50%;
-  left: 750px;
-  top: 61px;
-  transition: 0.2s;
-}
-.section_tree .img_sec_seven:hover {
-  border-radius: 20%;
-}
-.section_tree .name4 {
-  position: absolute;
-  left: 775px;
-  top: 220px;
-}
-.section_tree .withe_but {
-  position: absolute;
-  width: 180px;
-  height: 40px;
-  left: 380px;
-  top: 270px;
-  background-color: #b1b1b1;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-  border-radius: 40px;
+.second-section .button-second-section-standpoint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
   transition: 0.3s;
 }
-.section_tree .withe_but:hover {
-  transform: scale(1.1);
+.second-section .button-second-section-standpoint .border-button-second-section {
+  width: 180px;
+  height: 40px;
+  background-color: #b1b1b1;
+  border: 2px solid #000000;
+  border-radius: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.section_tree .withe_but .small_textt {
-  position: absolute;
+.second-section .button-second-section-standpoint .border-button-second-section .text-button-second-section {
   width: 137px;
   height: 17px;
-  left: 21px;
-  top: 9px;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
 }
+.second-section .button-second-section-standpoint:hover {
+  transform: scale(1.1);
+}
 
 @media screen and (max-width: 1160px) {
-  .section_tree {
-    position: absolute;
-    width: 492px;
-    height: 905px;
-    left: calc(50% - 246px);
-    top: 1351px;
-  }
-  .section_tree .h_two {
-    position: absolute;
-    width: 416px;
-    height: 27px;
-    left: 38px;
-    top: -20px;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
+  .second-section {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+  .second-section .headline-second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  .second-section .stormtrooper-list {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0px 15% 0px 15%;
+    margin: 0px;
+    padding-top: 25px;
+  }
+  .second-section .stormtrooper-list .img-stormtrooper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .second-section .stormtrooper-list .stormtrooper-name {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
     text-align: center;
-    color: #444444;
   }
-  .section_tree .img_sec_ {
-    position: absolute;
-    width: 236px;
-    height: 236px;
-    left: 0px;
-    top: 61px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+  .second-section .button-second-section-standpoint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
   }
-  .section_tree .name1 {
-    position: absolute;
-    left: 70px;
-    top: 30px;
-    color: #000000;
-  }
-  .section_tree .img_sec_five {
-    position: absolute;
-    width: 236px;
-    height: 236px;
-    left: 256px;
-    top: 61px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .section_tree .name2 {
-    position: absolute;
-    left: 330px;
-    top: 30px;
-  }
-  .section_tree .img_sec_six {
-    position: absolute;
-    width: 236px;
-    height: 236px;
-    left: 0px;
-    top: 350px;
-  }
-  .section_tree .name3 {
-    position: absolute;
-    left: 60px;
-    top: 320px;
-  }
-  .section_tree .img_sec_seven {
-    position: absolute;
-    width: 236px;
-    height: 236px;
-    left: 256px;
-    top: 350px;
-  }
-  .section_tree .name4 {
-    position: absolute;
-    left: 320px;
-    top: 320px;
-  }
-  .section_tree .withe_but {
-    position: absolute;
+  .second-section .button-second-section-standpoint .border-button-second-section {
     width: 180px;
     height: 40px;
-    left: 156px;
-    top: 605px;
-    background: #b1b1b1;
+    background-color: #b1b1b1;
     border: 2px solid #000000;
-    box-sizing: border-box;
     border-radius: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .section_tree .withe_but .small_textt {
-    position: absolute;
+  .second-section .button-second-section-standpoint .border-button-second-section .text-button-second-section {
     width: 137px;
     height: 17px;
-    left: 21px;
-    top: 9px;
+    text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    display: flex;
-    align-items: flex-end;
     color: #000000;
+  }
+  .second-section .button-second-section-standpoint:hover {
+    transform: scale(1.1);
   }
 }
 @media screen and (max-width: 720px) {
-  .section_tree {
-    position: absolute;
-    width: 300px;
-    height: 900px;
-    left: calc(50% - 150px);
-    top: 1392px;
-  }
-  .section_tree .h_two {
-    position: absolute;
-    width: 280px;
-    height: 54px;
-    left: 10px;
-    top: 0px;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
+  .second-section {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+  .second-section .headline-second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  .second-section .stormtrooper-list {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0px 15% 0px 15%;
+    margin: 0px;
+    padding-top: 25px;
+  }
+  .second-section .stormtrooper-list .img-stormtrooper {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .second-section .stormtrooper-list .img-stormtrooper .stormtrooper-name {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
     text-align: center;
-    color: #444444;
   }
-  .section_tree .img_sec_ {
-    position: absolute;
+  .second-section .img-second-section {
     width: 150px;
     height: 150px;
-    left: calc(50% - 75px);
-    top: 68px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    transition: 0.2s;
   }
-  .section_tree .name1 {
-    left: 105px;
-    top: 220px;
+  .second-section .img-second-section:hover {
+    border-radius: 20%;
   }
-  .section_tree .img_sec_five {
-    width: 150px;
-    height: 150px;
-    left: calc(50% - 75px);
-    top: 269px;
+  .second-section .button-second-section-standpoint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 550px;
+    transition: 0.3s;
   }
-  .section_tree .name2 {
-    left: 105px;
-    top: 420px;
-  }
-  .section_tree .img_sec_six {
-    width: 150px;
-    height: 150px;
-    left: calc(50% - 75px);
-    top: 469px;
-  }
-  .section_tree .name3 {
-    left: 95px;
-    top: 620px;
-  }
-  .section_tree .img_sec_seven {
-    width: 150px;
-    height: 150px;
-    left: calc(50% - 75px);
-    top: 660px;
-  }
-  .section_tree .name4 {
-    left: 95px;
-    top: 813px;
-  }
-  .section_tree .withe_but {
-    width: 280px;
+  .second-section .button-second-section-standpoint .border-button-second-section {
+    width: 180px;
     height: 40px;
-    left: 10px;
-    top: 850px;
     background-color: #b1b1b1;
     border: 2px solid #000000;
-    box-sizing: border-box;
     border-radius: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .section_tree .withe_but .small_textt {
+  .second-section .button-second-section-standpoint .border-button-second-section .text-button-second-section {
     width: 137px;
     height: 17px;
-    left: 70px;
-    top: 10px;
+    text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    display: flex;
-    align-items: flex-end;
     color: #000000;
+  }
+  .second-section .button-second-section-standpoint:hover {
+    transform: scale(1.1);
   }
 }/*# sourceMappingURL=section-tree.css.map */

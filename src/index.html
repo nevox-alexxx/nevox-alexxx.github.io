@@ -41,53 +41,68 @@
   </header>
 
   <main>
-    <!-- якщо ти маєш тег section, нащо всередині ще огортати в дів - цей самий клас можна прописати тегу секшн і не додавати зайву обгортку  -->
     <div class="headline-first-section">
       <p class="headline">How Dreamshare works?</p>
     </div>
 
     <section class="first-section" id="section-1">
-        <img src="./img/new_images/joe-1.jpg" alt="Stormtrooper seat" 
+        <img 
+          src="./img/new_images/joe-1.jpg" 
+          alt="Stormtrooper seat" 
+          class="first-section__img"
+        >
 
-        class="
-        img-big-screen 
-        img-midle-screen 
-        img-small-screen">
+        <img 
+          src="./img/new_images/frends.jpg" 
+          alt="Friends" 
+          class="first-section__img"
+        >
 
-        <img src="./img/new_images/frends.jpg" alt="Friends" 
-        class="
-        img-big-screen 
-        img-midle-screen 
-        img-small-screen">
-
-        <img src="./img/new_images/joe.jpg" alt="Stormtrooper stand" 
-        class="
-        img-big-screen 
-        img-midle-screen 
-        img-small-screen">
+        <img 
+          src="./img/new_images/joe.jpg" 
+          alt="Stormtrooper stand" 
+          class="first-section__img"
+        >
     </section>
 
-    <!-- те саме стосовно тегу секшн і зайвого дів -->
-    <section>
-      <div class="section_tree" id="section-3">
-        <p class="h_two">Meet a partner for your best holiday</p>
-        <!-- опис в атрибуті alt має нести трохи більше сенсу, щоб це було прочитано роботом і було зрозуміло що там на картинці (але не багато тексту, наприклад Jack Smith partner, Luke Davis partner etc.) -->
-        <img src="./img/new_images/mike.jpg" alt="Person" class="img_sec_">
-        <p class="name1">Jack Smith</p>
+    <section class="second-section" id="section-2">
 
-        <img src="./img/new_images/mike_4.jpg" alt="person" class="img_sec_five">
-        <p class="name2">Luke Davis</p>
-
-        <img src="./img/new_images/mike_3.jpg" alt="person" class="img_sec_six">
-        <p class="name3">Max Johnson</p>
-
-        <img src="./img/new_images/mike_2.jpg" alt="person" class="img_sec_seven">
-        <p class="name4">Owen Brown</p>
-
-        <div class="withe_but">
-          <a href="#/" class="small_textt">See other partners</a>
-        </div>
+      <div class="headline-second-section">
+        <p class="second-headline">Meet a partner for your best holiday</p>
       </div>
+
+        <ul class="stormtrooper-list">
+          <li class="img-stormtrooper"> 
+            <p class="stormtrooper-name">Jack Smith</p>
+            <img src="./img/new_images/mike.jpg" alt="Stormtrooper Jack Smith" class="img-second-section">
+          </li>
+          
+          <li class="img-stormtrooper">
+            <p class="stormtrooper-name">Luke Davis</p>
+            <img 
+              src="./img/new_images/mike_4.jpg" 
+              alt="Stormtrooper Luke Davis" 
+              class="img-second-section"
+            >
+          </li>
+
+          <li class="img-stormtrooper">
+            <p class="stormtrooper-name">Max Johnson</p>
+            <img src="./img/new_images/mike_3.jpg" alt="Stormtrooper Max Johnson" class="img-second-section">
+          </li>
+
+          <li class="img-stormtrooper">
+            <p class="stormtrooper-name">Owen Brown</p>
+            <img src="./img/new_images/mike_2.jpg" alt="Stormtrooper Owen Brown" class="img-second-section">
+          </li>
+        </ul>
+
+        <div class="button-second-section-standpoint">
+          <div class="border-button-second-section">
+            <a href="#/" class="text-button-second-section">See other partners</a>
+          </div>
+        </div>
+
     </section>
 
     <!-- те саме стосовно тегу секшн і зайвого дів -->
@@ -153,7 +168,7 @@
 
           <a href="#section-1" class="contact cont">Second page</a>
 
-          <a href="#section-3" class="contact pres">Third page</a>
+          <a href="#section-2" class="contact pres">Third page</a>
 
           <a href="#section-4" class="contact blog">Last page</a>
 
