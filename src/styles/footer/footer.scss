@@ -1,513 +1,132 @@
-// яке саме інфо?
-.info {
-  position: absolute;
-  width: 100%;
-  height: 225px;
-  justify-content: center;
-  top: 3500px;
 
-  // naming - колір може помінятися
-  .red_line {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    top: 0px;
 
-    background: #000000;
-  }
-  // naming
-  .red {
-    position: absolute;
-    width: 119px;
-    height: 20px;
-    left: 249px;
-    top: 38px;
-
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: #000000;
-    transform: 0.2s;
-  }
-  // nesting
-  .red:hover {
-    scale: 1.2;
-  }
-
-  .company {
-    position: absolute;
-    width: 70px;
-    height: 17px;
-    left: 490px;
-    top: 40px;
-
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-
-    display: flex;
-    align-items: flex-end;
-
-    color: #464646;
-  }
-
-  .partners {
-    position: absolute;
-    width: 64px;
-    height: 17px;
-    left: 729px;
-    top: 40px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-
-    display: flex;
-    align-items: flex-end;
-
-    color: #464646;
-  }
-
-  .contact {
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    left: 490px;
-    top: 68px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 26px;
-    transition: 0.2;
-
-    color: #000000;
-  }
-  // nesting
-  .contact:hover {
-    color: #000000;
-    scale: 1.1;
-  }
-  // about ?
-  .abou {
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    left: 490px;
-    top: 65px;
-    text-decoration: none;
-  }
-  // нечитабельна назва
-  .cont {
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    left: 490px;
-    top: 95px;
-    text-decoration: none;
-  }
-  // нечитабельна назва
-  .pres {
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    left: 490px;
-    top: 125px;
-    text-decoration: none;
-  }
-
-  .blog {
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    left: 490px;
-    top: 155px;
-    text-decoration: none;
-  }
-  // tap ?
-  .tap {
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    left: 490px;
-    top: 185px;
-    text-decoration: none;
-  }
-
-  .help {
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    left: 490px;
-    top: 215px;
-    text-decoration: none;
-  }
-  // design ?
-  .desig {
-    position: absolute;
-    width: 83px;
-    height: 12px;
-    left: calc(55% + 465px / 2);
-    top: 40px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: 1px;
-
-    color: #727272;
-  }
-  // logo ?
-  .logoo {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: calc(55% + 495px / 2);
-    top: 65px;
-  }
+a {
+  text-decoration: none;
 }
 
-@media screen and (max-width: 1160px) {
-  .info {
+
+.footer_line {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  margin-top: 100px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  background-color: #1f1f1f;
+  
+  .footer-logo-container{
+    width: 300px;
+    height: 200px;
     display: flex;
-    width: 720px;
-    height: 224px;
-    left: calc(50% - 720px / 2);
-    top: 3335px;
+    justify-content: center;
 
-    .red_line {
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      left: 0px;
-      top: 0px;
 
-      background: #000000;
-    }
-
-    .red {
-      position: absolute;
+    .footer-logo {
       width: 119px;
       height: 20px;
-      left: 39px;
-      top: 38px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
+  
+      text-decoration: none;
+      font-size: 17px;
       line-height: 20px;
+  
+      color: #ececec;
+      transition: 0.2s;
 
-      display: flex;
-      align-items: flex-end;
-
-      color: #000000;
+      &:hover {
+        scale: 1.2;
+      }
     }
+  }
 
-    .company {
-      position: absolute;
+  .footer-nav-list{
+    width: 300px;
+    height: 200px;
+
+    .footer-list-name {
       width: 70px;
       height: 17px;
-      left: 266px;
-      top: 40px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
+      
+      padding-top: 5px;
+      padding-bottom: 30px;
+      font-size: 17px;
       line-height: 17px;
 
-      color: #444444;
+      
+      color: #ececec;
     }
-
-    .partners {
-      position: absolute;
-      width: 64px;
-      height: 17px;
-      left: 436px;
-      top: 40px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 17px;
-
-      display: flex;
-      align-items: flex-end;
-
-      color: #444444;
-    }
-
-    .contact {
-      position: absolute;
-      width: 114px;
-      height: 156px;
-      left: 266px;
-      top: 68px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 300;
+    .nav {
+      font-weight: 700;
       font-size: 14px;
       line-height: 26px;
-      color: #999999;
+      transition: 0.45s;
+  
+      &:hover {
+        color: #f2f2f2;
+      }
+      
+      color: rgb(87, 87, 87);
     }
-
-    .abou {
-      position: absolute;
-      width: 114px;
-      height: 26px;
-      left: 266px;
-      top: 65px;
-      text-decoration: none;
+  }
+  .hover-scale{
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.04)
     }
+  }
 
-    .cont {
-      position: absolute;
-      width: 114px;
-      height: 26px;
-      left: 266px;
-      top: 95px;
-      text-decoration: none;
-    }
+  .footer-link{
+    width: 300px;
+    height: 200px;
 
-    .pres {
-      position: absolute;
-      width: 114px;
-      height: 26px;
-      left: 266px;
-      top: 125px;
-      text-decoration: none;
-    }
-
-    .blog {
-      position: absolute;
-      width: 114px;
-      height: 26px;
-      left: 266px;
-      top: 155px;
-      text-decoration: none;
-    }
-
-    .tap {
-      position: absolute;
-      width: 114px;
-      height: 26px;
-      left: 266px;
-      top: 185px;
-      text-decoration: none;
-    }
-
-    .help {
-      position: absolute;
-      width: 114px;
-      height: 26px;
-      left: 266px;
-      top: 215px;
-      text-decoration: none;
-    }
-
-    .desig {
-      position: absolute;
+    .footer-text-before-svg {
       width: 83px;
       height: 12px;
-      left: 585px;
-      top: 40px;
-
-      font-family: Montserrat;
-      font-style: normal;
+  
       font-weight: bold;
       font-size: 10px;
       line-height: 12px;
+      display: flex;
+      align-items: flex-end;
       letter-spacing: 1px;
-
-      color: black;
+  
+      color: #727272;
     }
-
-    .logoo {
-      position: absolute;
+  
+    .svg-link {
+      margin:15px 0 0 15px;
       width: 50px;
       height: 50px;
-      left: 620px;
-      top: 59px;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.5) rotate(360deg);
+      }
     }
   }
 }
+  
+//  @media screen and (max-width: 1160px) {
+// }
 
 @media screen and (max-width: 720px) {
-  .info {
-    width: 320px;
-    height: 254px;
-    left: calc(50% - 320px / 2);
-    top: 3712px;
+  .footer-nav-list{
+    padding-left: 0;
+  }
 
-    .red_line {
-      width: 100%;
-      height: 2px;
-      left: 0px;
-      top: 0px;
+  .footer-logo-container{
+    padding-left: 10px;
 
-      background: #000000;
-    }
-
-    .red {
-      position: absolute;
-      width: 119px;
-      height: 20px;
-      left: 101px;
-      top: 21px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
+    .footer-logo {
       font-size: 16px;
       line-height: 20px;
-
-      color: #000000;
-    }
-
-    .company {
-      width: 70px;
-      height: 17px;
-      left: 125px;
-      top: 54px;
-
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 17px;
-
-      display: flex;
-      align-items: flex-end;
-      text-align: center;
-
-      color: #444444;
-    }
-
-    .partners {
-      position: absolute;
-      width: 64px;
-      height: 17px;
-      left: 127.5px;
-      top: 130px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 17px;
-
-      display: flex;
-      align-items: flex-end;
-
-      color: #444444;
-    }
-
-    .contact {
-      position: absolute;
-      width: 40px;
-      height: 156px;
-      left: 266px;
-      top: 68px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 26px;
-      color: #999999;
-    }
-
-    .abou {
-      position: absolute;
-      width: 40px;
-      height: 26px;
-      left: 49px;
-      top: 70px;
-      text-decoration: none;
-    }
-
-    .cont {
-      position: absolute;
-      width: 40px;
-      height: 26px;
-      left: 105px;
-      top: 70px;
-      text-decoration: none;
-    }
-
-    .pres {
-      position: absolute;
-      width: 40px;
-      height: 26px;
-      left: 174px;
-      top: 71px;
-      text-decoration: none;
-    }
-
-    .blog {
-      position: absolute;
-      width: 40px;
-      height: 26px;
-      left: 230px;
-      top: 72px;
-      text-decoration: none;
-    }
-
-    .tap {
-      position: absolute;
-      width: 114px;
-      height: 26px;
-      left: 65px;
-      top: 99px;
-      text-decoration: none;
-    }
-
-    .help {
-      position: absolute;
-      width: 40px;
-      height: 26px;
-      left: 196px;
-      top: 100px;
-      text-decoration: none;
-      color: #999999;
-    }
-
-    .desig {
-      position: absolute;
-      width: 83px;
-      height: 12px;
-      left: 120px;
-      top: 161px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 10px;
-      line-height: 12px;
-      display: flex;
-      align-items: flex-end;
-      letter-spacing: 1px;
-
-      color: #444444;
-    }
-
-    .logoo {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      left: 133px;
-      top: 180px;
     }
   }
 }
