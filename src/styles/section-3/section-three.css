@@ -1,0 +1,194 @@
+.headline-activites-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #444444;
+}
+.headline-activites-section .headline-activites {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.section-activites {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  height: 1031px;
+  width: 100%;
+  margin-top: 60px;
+}
+.section-activites .title-img {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  background-color: rgba(102, 102, 102, 0.7254901961);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  color: #d1d1d1;
+}
+.section-activites .allies-activites__img {
+  width: 28%;
+  height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_tree/alies.jpg");
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.section-activites .allies-activites__img:hover {
+  scale: 1.1;
+}
+.section-activites .meditation-activites__img {
+  width: 28%;
+  height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_tree/sea_star.jpg");
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.section-activites .meditation-activites__img:hover {
+  scale: 1.1;
+}
+.section-activites .helmet-activites__img {
+  width: 28%;
+  height: 310px;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_tree/red-suit.webp");
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.section-activites .helmet-activites__img:hover {
+  scale: 1.1;
+}
+.section-activites .newsuit-activites__img {
+  width: 28%;
+  height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/new_images/mike_2.jpg");
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.section-activites .newsuit-activites__img:hover {
+  scale: 1.1;
+}
+.section-activites .lazertag-activites__img {
+  width: 57.5%;
+  height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_tree/battle-field.jpg");
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.section-activites .lazertag-activites__img:hover {
+  scale: 1.1;
+}
+.section-activites .flights-activites__img {
+  width: 57.5%;
+  height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_tree/mando.jpg");
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.section-activites .flights-activites__img:hover {
+  scale: 1.1;
+}
+.section-activites .tatooine-activites__img {
+  width: 28%;
+  height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/section_tree/tatooine.jpg");
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.section-activites .tatooine-activites__img:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1160px) {
+  .headline-activites-section {
+    padding-top: 275px;
+    padding-bottom: 20px;
+  }
+  .section-activites {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 70px;
+  }
+  .section-activites .title-img {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    background-color: rgba(102, 102, 102, 0.7254901961);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+    color: #d1d1d1;
+  }
+}
+@media screen and (max-width: 720px) {
+  .headline-activites-section {
+    padding-top: 75px;
+    padding-bottom: 20px;
+  }
+  .section-activites {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    height: 1130px;
+    margin-top: 0px;
+  }
+  .section-activites .allies-activites__img {
+    width: 300px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+  }
+  .section-activites .little-img {
+    width: 300px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+  }
+}/*# sourceMappingURL=section-three.css.map */
