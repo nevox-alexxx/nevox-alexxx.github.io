@@ -12,7 +12,7 @@
     
     .second-headline {
       font-weight: bold;
-      font-size: 100%;
+      font-size: 26px;
       line-height: 32px;
       color: #444444;
       padding-top: 20px;
@@ -188,6 +188,15 @@
       justify-content: center;
       align-items: center;
       height: 90px;
+
+      .second-headline {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 32px;
+        color: #444444;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
     }
   
     .partners-list{ 

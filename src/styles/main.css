@@ -340,18 +340,18 @@ textarea {
     height: 100px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 90px 0;
+    padding: 15px 22.5px 0;
     align-items: center;
   }
   .logo {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #d4d4d4;
     transition: 0.2s;
   }
   .logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
   }
   .buttons-container {
@@ -368,18 +368,18 @@ textarea {
   .border-sign-up .sign-up {
     text-decoration: none;
     color: #d4d4d4;
-    font-size: 17px;
+    font-size: 15px;
   }
   .log-in-button {
     padding: 10px;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 17px;
     text-decoration: none;
     color: #d4d4d4;
     transition: 0.2s;
   }
   .log-in-button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .main-tittle {
     position: relative;
@@ -387,9 +387,9 @@ textarea {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 42px;
-    padding-top: 70px;
-    line-height: 70px;
+    font-size: 30px;
+    padding-top: 60px;
+    line-height: 35px;
     text-align: center;
     color: #d4d4d4;
   }
@@ -399,7 +399,7 @@ textarea {
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 24px;
     text-align: center;
@@ -509,7 +509,7 @@ textarea {
 }
 .second-section .headline-second-section .second-headline {
   font-weight: bold;
-  font-size: 100%;
+  font-size: 26px;
   line-height: 32px;
   color: #444444;
   padding-top: 20px;
@@ -662,6 +662,14 @@ textarea {
     align-items: center;
     height: 90px;
   }
+  .second-section .headline-second-section .second-headline {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 32px;
+    color: #444444;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .second-section .partners-list {
     display: flex;
     width: 100%;
@@ -760,6 +768,7 @@ textarea {
   background-color: rgba(102, 102, 102, 0.7254901961);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  border-radius: 4px 4px 0px 0px;
   display: flex;
   align-items: flex-end;
   text-align: center;
@@ -879,6 +888,7 @@ textarea {
     font-size: 22px;
     line-height: 27px;
     background-color: rgba(102, 102, 102, 0.7254901961);
+    border-radius: 4px;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     display: flex;
@@ -892,6 +902,11 @@ textarea {
   .headline-activites-section {
     padding-top: 75px;
     padding-bottom: 20px;
+  }
+  .headline-activites-section .headline-activites {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 32px;
   }
   .section-activites {
     display: flex;
@@ -910,7 +925,6 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: normal;
-    border-radius: 4px;
   }
   .section-activites .little-img {
     width: 300px;
@@ -1054,23 +1068,21 @@ textarea {
     width: 280px;
     height: 54px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 27px;
-    display: flex;
-    align-items: flex-end;
     text-align: center;
     color: #363636;
   }
   .section-form .title-section-form {
-    width: 290px;
+    width: 50%;
     height: 24px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 20px;
     color: #444;
   }
   .input-field {
-    width: 280px;
+    width: 240px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -1087,6 +1099,9 @@ textarea {
   }
   .input-field .section-form-button:hover {
     scale: 1.07;
+  }
+  .input-field .section-form-input {
+    width: 245px;
   }
 }
 a {
@@ -1186,6 +1201,94 @@ a {
 @media screen and (max-width: 720px) {
   .footer-nav-list {
     padding-left: 0;
+  }
+  .footer_line {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    margin-top: 100px;
+  }
+  .footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    background-color: #1f1f1f;
+  }
+  .footer-section .footer-logo-container {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-section .footer-logo-container .footer-logo {
+    width: 119px;
+    height: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ececec;
+    transition: 0.2s;
+  }
+  .footer-section .footer-logo-container .footer-logo:hover {
+    scale: 1.2;
+  }
+  .footer-section .footer-nav-list {
+    width: 300px;
+    height: 200px;
+  }
+  .footer-section .footer-nav-list .footer-list-name {
+    width: 70px;
+    height: 17px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: 10px;
+    line-height: 17px;
+    color: #ececec;
+  }
+  .footer-section .footer-nav-list .nav {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 26px;
+    transition: 0.45s;
+    color: rgb(87, 87, 87);
+  }
+  .footer-section .footer-nav-list .nav:hover {
+    color: #f2f2f2;
+  }
+  .footer-section .hover-scale {
+    transition: 0.3s;
+  }
+  .footer-section .hover-scale:hover {
+    transform: scale(1.04);
+  }
+  .footer-section .footer-link {
+    width: 300px;
+    height: 200px;
+  }
+  .footer-section .footer-link .footer-text-before-svg {
+    width: 83px;
+    height: 12px;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 12px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1px;
+    color: #727272;
+  }
+  .footer-section .footer-link .svg-link {
+    margin: 15px 0 0 15px;
+    width: 35px;
+    height: 35px;
+    transition: 0.2s;
+  }
+  .footer-section .footer-link .svg-link:hover {
+    transform: scale(1.5) rotate(360deg);
   }
   .footer-logo-container {
     padding-left: 10px;

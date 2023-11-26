@@ -270,20 +270,20 @@ $main-color :#d4d4d4;
     height: 100px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 90px 0;
+    padding: 15px 22.5px 0;
   
     align-items: center;
   }
 
   .logo {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: $main-color;
     transition: 0.2s;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       cursor: pointer;
     }
   }
@@ -304,13 +304,13 @@ $main-color :#d4d4d4;
     .sign-up {
       text-decoration: none;
       color: $main-color;
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 
   .log-in-button {
     padding: 10px;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 17px;
     text-decoration: none;
 
@@ -318,7 +318,7 @@ $main-color :#d4d4d4;
     transition: 0.2s;
 
     &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     }
   }
 
@@ -329,10 +329,10 @@ $main-color :#d4d4d4;
     align-items: center;
 
     font-weight: bold;
-    font-size: 42px;
+    font-size: 30px;
 
-    padding-top: 70px;
-    line-height: 70px;
+    padding-top: 60px;
+    line-height: 35px;
     text-align: center;
 
     color: $main-color;
@@ -345,7 +345,7 @@ $main-color :#d4d4d4;
     align-items: center;
     padding-top: 30px;
 
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 24px;
     text-align: center;

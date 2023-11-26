@@ -31,6 +31,7 @@
   background-color: rgba(102, 102, 102, 0.7254901961);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  border-radius: 4px 4px 0px 0px;
   display: flex;
   align-items: flex-end;
   text-align: center;
@@ -150,6 +151,7 @@
     font-size: 22px;
     line-height: 27px;
     background-color: rgba(102, 102, 102, 0.7254901961);
+    border-radius: 4px;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     display: flex;
@@ -163,6 +165,11 @@
   .headline-activites-section {
     padding-top: 75px;
     padding-bottom: 20px;
+  }
+  .headline-activites-section .headline-activites {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 32px;
   }
   .section-activites {
     display: flex;
@@ -181,7 +188,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: normal;
-    border-radius: 4px;
   }
   .section-activites .little-img {
     width: 300px;

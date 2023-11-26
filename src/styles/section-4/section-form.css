@@ -131,23 +131,21 @@
     width: 280px;
     height: 54px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 27px;
-    display: flex;
-    align-items: flex-end;
     text-align: center;
     color: #363636;
   }
   .section-form .title-section-form {
-    width: 290px;
+    width: 50%;
     height: 24px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 20px;
     color: #444;
   }
   .input-field {
-    width: 280px;
+    width: 240px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -164,5 +162,8 @@
   }
   .input-field .section-form-button:hover {
     scale: 1.07;
+  }
+  .input-field .section-form-input {
+    width: 245px;
   }
 }/*# sourceMappingURL=section-form.css.map */

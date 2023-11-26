@@ -44,6 +44,7 @@ $transition-scale: 1.05;
     line-height: 27px;
     background-color: #666666b9;
     backdrop-filter: blur(10px);
+    border-radius: 4px 4px 0px 0px;
 
     display: flex;
     align-items: flex-end;
@@ -182,6 +183,7 @@ $transition-scale: 1.05;
       font-size: 22px;
       line-height: 27px;
       background-color: #666666b9;
+      border-radius: 4px;
       backdrop-filter: blur(10px);
 
       display: flex;
@@ -198,6 +200,12 @@ $transition-scale: 1.05;
   .headline-activites-section{
     padding-top: 75px;
     padding-bottom: 20px;
+
+    .headline-activites {
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 32px;
+    }
   }
 
   .section-activites {
@@ -219,7 +227,6 @@ $transition-scale: 1.05;
       background-repeat: no-repeat;
 
       mix-blend-mode: normal;
-      border-radius: 4px;
     }
 
     .little-img {
