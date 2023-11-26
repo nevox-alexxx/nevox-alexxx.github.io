@@ -1,0 +1,18 @@
+@import 'reset/reset';
+@import url(./fonts/font.css);
+@import './header/header.scss';
+@import './section-1/section-one.scss';
+@import './section-2/section-two.scss';
+@import './section-3/section-three.scss';
+@import './section-4/section-form.scss';
+@import './footer/footer.scss';
+
+html {
+  scroll-behavior: smooth;
+  font-family: Montserrat;
+
+}
+
+body {
+  background-color: #cccccc;
+}

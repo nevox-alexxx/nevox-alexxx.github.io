@@ -1,0 +1,237 @@
+a {
+  text-decoration: none;
+}
+
+.footer_line {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  margin-top: 100px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  background-color: #1f1f1f;
+  
+  .footer-logo-container{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+
+
+    .footer-logo {
+      width: 119px;
+      height: 20px;
+  
+      text-decoration: none;
+      font-size: 17px;
+      line-height: 20px;
+  
+      color: #ececec;
+      transition: 0.2s;
+
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+
+  .footer-nav-list{
+    width: 300px;
+    height: 200px;
+
+    .footer-list-name {
+      width: 70px;
+      height: 17px;
+      
+      padding-top: 5px;
+      padding-bottom: 30px;
+      font-size: 17px;
+      line-height: 17px;
+
+      
+      color: #ececec;
+    }
+    .nav {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 26px;
+      transition: 0.45s;
+  
+      &:hover {
+        color: #f2f2f2;
+      }
+      
+      color: rgb(87, 87, 87);
+    }
+  }
+  .hover-scale{
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.04)
+    }
+  }
+
+  .footer-link{
+    width: 300px;
+    height: 200px;
+
+    .footer-text-before-svg {
+      width: 83px;
+      height: 12px;
+  
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 1px;
+  
+      color: #727272;
+    }
+  
+    .svg-link {
+      margin:15px 0 0 15px;
+      width: 50px;
+      height: 50px;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.5) rotate(360deg);
+      }
+    }
+  }
+}
+  
+//  @media screen and (max-width: 1160px) {
+// }
+
+@media screen and (max-width: 720px) {
+  .footer-nav-list{
+    padding-left: 0;
+  }
+
+  .footer_line {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    margin-top: 100px;
+  }
+  
+  .footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    background-color: #1f1f1f;
+    
+    .footer-logo-container{
+      width: 100px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+  
+  
+      .footer-logo {
+        width: 119px;
+        height: 20px;
+    
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 20px;
+    
+        color: #ececec;
+        transition: 0.2s;
+  
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+  
+    .footer-nav-list{
+      width: 300px;
+      height: 200px;
+  
+      .footer-list-name {
+        width: 70px;
+        height: 17px;
+        
+        padding-top: 5px;
+        padding-bottom: 30px;
+        font-size: 10px;
+        line-height: 17px;
+  
+        
+        color: #ececec;
+      }
+      .nav {
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 26px;
+        transition: 0.45s;
+    
+        &:hover {
+          color: #f2f2f2;
+        }
+        
+        color: rgb(87, 87, 87);
+      }
+    }
+    .hover-scale{
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.04)
+      }
+    }
+  
+    .footer-link{
+      width: 300px;
+      height: 200px;
+  
+      .footer-text-before-svg {
+        width: 83px;
+        height: 12px;
+    
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 12px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 1px;
+    
+        color: #727272;
+      }
+    
+      .svg-link {
+        margin:15px 0 0 15px;
+        width: 35px;
+        height: 35px;
+        transition: 0.2s;
+        &:hover {
+          transform: scale(1.5) rotate(360deg);
+        }
+      }
+    }
+  }
+
+  .footer-logo-container{
+    padding-left: 10px;
+
+    .footer-logo {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
